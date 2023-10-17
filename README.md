@@ -11,3 +11,5 @@ Actions: New; Save; Load;
 # Technology Details
 Language: C/C++;
 Hardware: CY8CKIT-042 PSoC® 4 Pioneer Kit;
+
+# Config format: INI
