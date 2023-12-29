@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|1344e898-9a84-4800-aca4-869fb4bf0661
+C:\Users\maksy\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|3d762142-5106-4e22-83b3-110d81366daa
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|3f5e63b7-8aa2-4567-857c-2782a01955c2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|1b379537-154c-40aa-b540-d4109d38f7de
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f7639594-36ad-4628-b931-09bc1d9b7714
+C:\Users\maksy\Desktop\MaksRoma\7_semestr\CSAD_(SAPR)\csdt2024ki47maksymiukrv12\Server\PSoC4_Checkers_Server.cydsn\PSoC4_Checkers_Server.cyprj|549ce242-7799-432f-990c-3be670ad1912
