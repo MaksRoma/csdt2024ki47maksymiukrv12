@@ -1,0 +1,23 @@
+# Ігнорувати всі файли у папці .vs
+.vs/
+
+# Ігнорувати скомпільовані файли та інші файли Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ігнорувати папки Debug та Release
+[Bb]in/
+[Oo]bj/
+[Dd]ebug*/
+[Rr]elease*/
+
+# Ігнорувати файли, специфічні для проекту
+*.exe
+*.ilk
+*.log
+*.tlog/
+*.obj
+*.pdb
+*.idb
