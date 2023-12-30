@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Server\PSoC4_Checkers_Server\Source Files\main.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Server\PSoC4_Checkers_Server\Generated_Source">
 <ExpandedNodeIds>
 <v>Server</v>
 <v>Server\PSoC4_Checkers_Server</v>
@@ -210,7 +210,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1311, 644" SelectedTabbedMdiWindow="9efef061-dc79-4783-8dba-9fd41f21898a"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d8393d79-75f7-42c2-a9e9-aeaa4eb4de15" /><DocumentWindow Key="C:\Users\maksy\Desktop\MaksRoma\7_semestr\CSAD_(SAPR)\csdt2024ki47maksymiukrv12\Server\PSoC4_Checkers_Server.cydsn\TopDesign\TopDesign.cysch" Guid="34eb987d-4865-4760-8364-81daa9a4050a" /><DocumentWindow Key="C:\Users\maksy\Desktop\MaksRoma\7_semestr\CSAD_(SAPR)\csdt2024ki47maksymiukrv12\Server\PSoC4_Checkers_Server.cydsn\PSoC4_Checkers_Server.cydwr" Guid="9c3642bf-d0e0-4c73-81e3-cfe7c64511cd" /><DocumentWindow Key="C:\Users\maksy\Desktop\MaksRoma\7_semestr\CSAD_(SAPR)\csdt2024ki47maksymiukrv12\Server\PSoC4_Checkers_Server.cydsn\main.c" Guid="9efef061-dc79-4783-8dba-9fd41f21898a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1131, 644" SelectedTabbedMdiWindow="34eb987d-4865-4760-8364-81daa9a4050a"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d8393d79-75f7-42c2-a9e9-aeaa4eb4de15" /><DocumentWindow Key="C:\Users\maksy\Desktop\MaksRoma\7_semestr\CSAD_(SAPR)\csdt2024ki47maksymiukrv12\Server\PSoC4_Checkers_Server.cydsn\TopDesign\TopDesign.cysch" Guid="34eb987d-4865-4760-8364-81daa9a4050a" /><DocumentWindow Key="C:\Users\maksy\Desktop\MaksRoma\7_semestr\CSAD_(SAPR)\csdt2024ki47maksymiukrv12\Server\PSoC4_Checkers_Server.cydsn\PSoC4_Checkers_Server.cydwr" Guid="9c3642bf-d0e0-4c73-81e3-cfe7c64511cd" /><DocumentWindow Key="C:\Users\maksy\Desktop\MaksRoma\7_semestr\CSAD_(SAPR)\csdt2024ki47maksymiukrv12\Server\PSoC4_Checkers_Server.cydsn\main.c" Guid="9efef061-dc79-4783-8dba-9fd41f21898a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

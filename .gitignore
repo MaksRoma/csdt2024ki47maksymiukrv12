@@ -1,3 +1,4 @@
+# Client project
 # Ігнорувати всі файли у папці .vs
 .vs/
 
@@ -21,3 +22,8 @@
 *.obj
 *.pdb
 *.idb
+
+# Server project
+# Ігнорувати всі файли у папках CortexM0 та codegentemp
+CortexM0/
+codegentemp/
