@@ -27,3 +27,6 @@
 # Ігнорувати всі файли у папках CortexM0 та codegentemp
 CortexM0/
 codegentemp/
+
+# Ігнорувати логи (.log)
+*.log
