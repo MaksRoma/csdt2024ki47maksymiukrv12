@@ -24,9 +24,13 @@
 *.idb
 
 # Server project
-# Ігнорувати всі файли у папках CortexM0 та codegentemp
+# Ігнорувати всі файли у папках CortexM0 та codegentemp Generated_Source
 CortexM0/
 codegentemp/
+Generated_Source/
 
-# Ігнорувати логи (.log)
+
+# Ігнорувати файли, специфічні для проекту
 *.log
+*.html
+*.rpt
