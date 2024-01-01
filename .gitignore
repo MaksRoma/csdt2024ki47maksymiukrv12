@@ -1,0 +1,39 @@
+# Client project
+# Ігнорувати всі файли у папці .vs
+.vs/
+
+# Ігнорувати скомпільовані файли та інші файли Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ігнорувати папки Debug та Release
+[Bb]in/
+[Oo]bj/
+[Dd]ebug*/
+[Rr]elease*/
+.vs/
+
+# Ігнорувати файли, специфічні для проекту
+*.exe
+*.ilk
+*.log
+*.tlog/
+*.obj
+*.pdb
+*.idb
+
+# Server project
+# Ігнорувати всі файли у папках CortexM0 та codegentemp Generated_Source
+CortexM0/
+codegentemp/
+Generated_Source/
+
+
+# Ігнорувати файли, специфічні для проекту
+*.log
+*.html
+*.rpt
+*.cysch
+*.cyfit
