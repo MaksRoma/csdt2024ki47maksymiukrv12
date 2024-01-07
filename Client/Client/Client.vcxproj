@@ -127,21 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="checkersFunctions.cpp" />
-    <ClCompile Include="checkersVariables.cpp" />
-    <ClCompile Include="error.cpp" />
-    <ClCompile Include="gameBoard.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="square.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="checkersFunctions.h" />
-    <ClInclude Include="checkersVariables.h" />
-    <ClInclude Include="constants.h" />
-    <ClInclude Include="error.h" />
-    <ClInclude Include="gameBoard.h" />
-    <ClInclude Include="square.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
