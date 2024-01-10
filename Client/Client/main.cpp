@@ -5,7 +5,6 @@
 #include <cstdlib>
 
 namespace sq {
-	
 	struct Square
 	{
 		char color() const { return c; }
