@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Server\PSoC4_Checkers_Server\Generated_Source">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Server\PSoC4_Checkers_Server\TopDesign">
 <ExpandedNodeIds>
 <v>Server</v>
 <v>Server\PSoC4_Checkers_Server</v>
@@ -27,11 +27,12 @@
 <v>Server\PSoC4_Checkers_Server\PSoC4_Checkers_Server.cydwr\Directives</v>
 <v>Server\PSoC4_Checkers_Server\PSoC4_Checkers_Server.cydwr\Flash Security</v>
 <v>Server\PSoC4_Checkers_Server\Header Files</v>
-<v>Server\PSoC4_Checkers_Server\Header Files\cyapicallbacks.h</v>
+<v>Server\PSoC4_Checkers_Server\Header Files\constants.h</v>
 <v>Server\PSoC4_Checkers_Server\Source Files</v>
 <v>Server\PSoC4_Checkers_Server\Source Files\main.c</v>
 <v>Server\PSoC4_Checkers_Server\Generated_Source</v>
 <v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Server</v>
@@ -46,7 +47,7 @@
 <v>Server\PSoC4_Checkers_Server\PSoC4_Checkers_Server.cydwr\Directives</v>
 <v>Server\PSoC4_Checkers_Server\PSoC4_Checkers_Server.cydwr\Flash Security</v>
 <v>Server\PSoC4_Checkers_Server\Header Files</v>
-<v>Server\PSoC4_Checkers_Server\Header Files\cyapicallbacks.h</v>
+<v>Server\PSoC4_Checkers_Server\Header Files\constants.h</v>
 <v>Server\PSoC4_Checkers_Server\Source Files</v>
 <v>Server\PSoC4_Checkers_Server\Source Files\main.c</v>
 <v>Server\PSoC4_Checkers_Server\Generated_Source</v>
@@ -55,7 +56,21 @@
 <v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\cy_lfclk</v>
 <v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\Em_EEPROM_Dynamic</v>
 <v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART.c</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART.h</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART_BOOT.c</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART_BOOT.h</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART_PINS.h</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART_PM.c</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART_PVT.h</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART_SPI_UART.c</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART_SPI_UART.h</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART_SPI_UART_INT.c</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART_SPI_UART_PVT.h</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART_UART.c</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART\UART_UART_BOOT.c</v>
 <v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART_rx</v>
+<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART_SCB_IRQ</v>
 <v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART_SCBCLK</v>
 <v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\UART_tx</v>
 <v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\cycodeshareexport.ld</v>
@@ -66,17 +81,9 @@
 <v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\cydeviceiar_trm.inc</v>
 <v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\cydevicerv_trm.inc</v>
 <v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\cydisabledsheets.h</v>
-<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\cyfitter.h</v>
-<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\cyfitter_cfg.c</v>
-<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\cyfitter_cfg.h</v>
-<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\cyfittergnu.inc</v>
-<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\cyfitteriar.inc</v>
-<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\cyfitterrv.inc</v>
-<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\cymetadata.c</v>
-<v>Server\PSoC4_Checkers_Server\Generated_Source\PSoC4\project.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Server">
 <ExpandedNodeIds>
 <v>Server</v>
 <v>Server\PSoC4_Checkers_Server</v>
@@ -114,6 +121,7 @@
 <v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
 <v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx.lst</v>
 <v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx_PM.lst</v>
+<v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SCB_IRQ.lst</v>
 <v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SCBCLK.lst</v>
 <v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART.lst</v>
 <v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART_INT.lst</v>
@@ -151,6 +159,7 @@
 <v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
 <v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx.lst</v>
 <v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx_PM.lst</v>
+<v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SCB_IRQ.lst</v>
 <v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SCBCLK.lst</v>
 <v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART.lst</v>
 <v>Server\PSoC4_Checkers_Server\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART_INT.lst</v>
@@ -178,7 +187,7 @@
 <v>Server\PSoC4_Checkers_Server\PSoC 4 Architecture TRM</v>
 <v>Server\PSoC4_Checkers_Server\PSoC 4200 Family Datasheet</v>
 <v>Server\PSoC4_Checkers_Server\System Reference Guides</v>
-<v>Server\PSoC4_Checkers_Server\System Reference Guides\cy_boot_v6_0</v>
+<v>Server\PSoC4_Checkers_Server\System Reference Guides\cy_boot_v6_10</v>
 <v>Server\PSoC4_Checkers_Server\System Reference Guides\cy_lfclk_v1_20</v>
 <v>Server\PSoC4_Checkers_Server\SCB_P4_v4_0.pdf</v>
 </ExpandedNodeIds>
@@ -188,7 +197,7 @@
 <v>Server\PSoC4_Checkers_Server\PSoC 4 Architecture TRM</v>
 <v>Server\PSoC4_Checkers_Server\PSoC 4200 Family Datasheet</v>
 <v>Server\PSoC4_Checkers_Server\System Reference Guides</v>
-<v>Server\PSoC4_Checkers_Server\System Reference Guides\cy_boot_v6_0</v>
+<v>Server\PSoC4_Checkers_Server\System Reference Guides\cy_boot_v6_10</v>
 <v>Server\PSoC4_Checkers_Server\System Reference Guides\cy_lfclk_v1_20</v>
 <v>Server\PSoC4_Checkers_Server\SCB_P4_v4_0.pdf</v>
 </VisibleNodeIds>
@@ -200,9 +209,8 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\PSoC4_Checkers_Server.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\PSoC4_Checkers_Server.cydsn\PSoC4_Checkers_Server.cydwr" />
 <name v=".\PSoC4_Checkers_Server.cydsn\main.c" />
+<name v=".\PSoC4_Checkers_Server.cydsn\TopDesign\TopDesign.cysch" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -210,7 +218,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1311, 654" SelectedTabbedMdiWindow="b509b2a3-4d6e-47e5-bcd2-3227a70c47a6"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d8393d79-75f7-42c2-a9e9-aeaa4eb4de15" /><DocumentWindow Key="C:\Users\maksy\Desktop\MaksRoma\7_semestr\CSAD_(SAPR)\csdt2024ki47maksymiukrv12\Server\PSoC4_Checkers_Server.cydsn\TopDesign\TopDesign.cysch" Guid="34eb987d-4865-4760-8364-81daa9a4050a" /><DocumentWindow Key="C:\Users\maksy\Desktop\MaksRoma\7_semestr\CSAD_(SAPR)\csdt2024ki47maksymiukrv12\Server\PSoC4_Checkers_Server.cydsn\PSoC4_Checkers_Server.cydwr" Guid="9c3642bf-d0e0-4c73-81e3-cfe7c64511cd" /><DocumentWindow Key="C:\Users\maksy\Desktop\MaksRoma\7_semestr\CSAD_(SAPR)\csdt2024ki47maksymiukrv12\Server\PSoC4_Checkers_Server.cydsn\main.c" Guid="b509b2a3-4d6e-47e5-bcd2-3227a70c47a6" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1311, 654" SelectedTabbedMdiWindow="b509b2a3-4d6e-47e5-bcd2-3227a70c47a6"><DocumentWindow Key="C:\Users\maksy\Desktop\MaksRoma\7_semestr\CSAD_(SAPR)\csdt2024ki47maksymiukrv12\Server\PSoC4_Checkers_Server.cydsn\main.c" Guid="b509b2a3-4d6e-47e5-bcd2-3227a70c47a6" /><DocumentWindow Key="C:\Users\maksy\Desktop\MaksRoma\7_semestr\CSAD_(SAPR)\csdt2024ki47maksymiukrv12\Server\PSoC4_Checkers_Server.cydsn\TopDesign\TopDesign.cysch" Guid="bc0931d6-55e1-4642-a119-4ccd74caa654" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="d8393d79-75f7-42c2-a9e9-aeaa4eb4de15" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
