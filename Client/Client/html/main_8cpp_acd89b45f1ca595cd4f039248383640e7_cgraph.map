@@ -1,0 +1,5 @@
+<map id="getAddress" name="getAddress">
+<area shape="rect" id="Node000001" title="Gets the index of the square in the &#39;squares&#39; vector based on its name." alt="" coords="5,5,93,32"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#aa35e8ed4e03646e6b2f0702612610d98" title="Displays an error message." alt="" coords="141,5,188,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,16,125,16,125,21,93,21"/>
+</map>

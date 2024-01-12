@@ -1,0 +1,21 @@
+<map id="getSquare" name="getSquare">
+<area shape="rect" id="Node000001" title="Gets the user&#39;s input for the square." alt="" coords="5,81,86,108"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="21,82,17,73,20,63,30,57,46,55,62,57,71,64,68,68,60,62,45,60,32,62,24,66,23,72,26,80"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a32afc8bcc4adc7a744a1bd2abd1a8dfa" title="Displays the game board." alt="" coords="134,5,230,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,78,132,42,140,37,143,42,135,46,72,83"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a1451d6a0f33f9d0a02a4b055e5839e6e" title="Displays the help information." alt="" coords="138,56,226,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="86,85,122,78,123,83,87,90"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a5384af9337d2aa27ad1b6057d05d56d9" title="Checks if a given string represents a valid square on the checkers board." alt="" coords="137,107,227,133"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="87,100,122,106,121,111,86,105"/>
+<area shape="rect" id="Node000009" href="$main_8cpp.html#a53c072a8b2ad52c1a4698a41455a96ee" title="Saves the game state to a file." alt="" coords="141,157,223,184"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="72,106,135,143,143,147,140,152,132,148,69,111"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#acd89b45f1ca595cd4f039248383640e7" title="Gets the index of the square in the &#39;squares&#39; vector based on its name." alt="" coords="284,56,371,83"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="222,104,272,86,273,91,223,109"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html#acee34386446af2988113888c81b75d8f" title="Checks if a given string represents a valid square on the checkers board." alt="" coords="291,107,363,133"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="228,117,276,117,276,123,228,123"/>
+<area shape="rect" id="Node000008" href="$main_8cpp.html#ac5dcb740f437eaf0c93cd496212e7812" title="Reverses the crown status of a given color." alt="" coords="278,157,376,184"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="223,131,273,149,272,154,222,136"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#aa35e8ed4e03646e6b2f0702612610d98" title="Displays an error message." alt="" coords="424,107,472,133"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="362,81,411,102,409,107,360,86"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="360,154,409,133,411,138,362,159"/>
+</map>

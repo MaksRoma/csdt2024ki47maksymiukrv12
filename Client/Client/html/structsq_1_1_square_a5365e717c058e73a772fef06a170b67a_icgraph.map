@@ -1,0 +1,7 @@
+<map id="sq::Square::setBacAdjSqs" name="sq::Square::setBacAdjSqs">
+<area shape="rect" id="Node000001" title="Sets the adjacent squares behind the square." alt="" coords="187,31,362,57"/>
+<area shape="rect" id="Node000002" href="$structsq_1_1_square.html#a3dc7ff9aefc2725172b5d3153973d243" title="Default constructor for Square." alt="" coords="5,5,139,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,34,139,30,139,24,171,28"/>
+<area shape="rect" id="Node000003" href="$structsq_1_1_square.html#ac253c89fafd5f8660dacb0a67c0df3de" title="Constructor for Square with color, square name, and row." alt="" coords="5,56,139,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,60,139,64,139,58,170,54"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="sq::Square::setBacJmpSqs" name="sq::Square::setBacJmpSqs">
+<area shape="rect" id="Node000001" title="Sets the squares for backward jumps from the square." alt="" coords="187,31,367,57"/>
+<area shape="rect" id="Node000002" href="$structsq_1_1_square.html#a3dc7ff9aefc2725172b5d3153973d243" title="Default constructor for Square." alt="" coords="5,5,139,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,34,139,30,139,24,172,28"/>
+<area shape="rect" id="Node000003" href="$structsq_1_1_square.html#ac253c89fafd5f8660dacb0a67c0df3de" title="Constructor for Square with color, square name, and row." alt="" coords="5,56,139,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,60,139,64,139,58,171,54"/>
+</map>

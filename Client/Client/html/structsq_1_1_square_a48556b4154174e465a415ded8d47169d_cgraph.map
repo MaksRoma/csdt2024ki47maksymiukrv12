@@ -1,0 +1,5 @@
+<map id="sq::Square::setBacJmpSqs" name="sq::Square::setBacJmpSqs">
+<area shape="rect" id="Node000001" title="Sets the squares for backward jumps from the square." alt="" coords="5,5,186,32"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#aa35e8ed4e03646e6b2f0702612610d98" title="Displays an error message." alt="" coords="234,5,281,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,16,218,16,218,21,186,21"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="sq::Square::setFrtJmpSqs" name="sq::Square::setFrtJmpSqs">
+<area shape="rect" id="Node000001" title="Sets the squares for forward jumps from the square." alt="" coords="5,5,179,32"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#aa35e8ed4e03646e6b2f0702612610d98" title="Displays an error message." alt="" coords="227,5,274,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,16,211,16,211,21,179,21"/>
+</map>
