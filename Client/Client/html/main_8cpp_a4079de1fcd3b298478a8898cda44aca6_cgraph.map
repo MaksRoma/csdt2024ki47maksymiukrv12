@@ -1,0 +1,9 @@
+<map id="updateBoard" name="updateBoard">
+<area shape="rect" id="Node000001" title="Updates the checkers board after a move." alt="" coords="5,31,100,57"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a0983dc2f72726eed695e1e02ba94e4a5" title="Checks if a promotion (to a crowned piece) is occurring." alt="" coords="152,5,242,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,33,136,27,137,32,101,38"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ac5dcb740f437eaf0c93cd496212e7812" title="Reverses the crown status of a given color." alt="" coords="148,56,246,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,50,133,55,132,61,100,55"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#aa35e8ed4e03646e6b2f0702612610d98" title="Displays an error message." alt="" coords="294,56,341,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="247,67,279,67,279,72,247,72"/>
+</map>

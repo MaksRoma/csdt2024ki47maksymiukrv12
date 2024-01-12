@@ -4,198 +4,764 @@
 #include <string>
 #include <cstdlib>
 
+
+/**
+ * @namespace sq
+ * @brief Namespace for defining Square struct and its functions.
+ */
 namespace sq {
-	struct Square
-	{
+
+	/**
+	 * @struct Square
+	 * @brief Represents a square on a checkers game board.
+	 *
+	 * This struct is used to represent each square on a checkers board,
+	 * storing information about the piece on the square, its position, and
+	 * possible movements.
+	 */
+	struct Square {
+		/**
+		 * @brief Gets the color of the piece on the square.
+		 * @return Character representing the color of the piece.
+		 */
 		char color() const { return c; }
+
+		/**
+		 * @brief Gets the name of the square.
+		 * @return String representing the square's name (e.g., "a1", "e5").
+		 */
 		std::string square() const { return s; }
+
+		/**
+		 * @brief Gets the row number of the square.
+		 * @return Character representing the row number.
+		 */
 		char row() const { return r; }
+
+		/**
+		 * @brief Gets the adjacent squares in front of the current square.
+		 * @return Vector of strings representing front adjacent squares.
+		 */
 		std::vector<std::string> getFrtAdjSqs() const { return frtAdjSqs; }
+
+		/**
+		 * @brief Gets the adjacent squares behind the current square.
+		 * @return Vector of strings representing back adjacent squares.
+		 */
 		std::vector<std::string> getBacAdjSqs() const { return bacAdjSqs; }
+
+		/**
+		 * @brief Gets the squares for forward jumps from the current square.
+		 * @return Vector of strings representing forward jump squares.
+		 */
 		std::vector<std::string> getFrtJmpSqs() const { return frtJmpSqs; }
+
+		/**
+		 * @brief Gets the squares for backward jumps from the current square.
+		 * @return Vector of strings representing backward jump squares.
+		 */
 		std::vector<std::string> getBacJmpSqs() const { return bacJmpSqs; }
+
+		/**
+		 * @brief Checks if the piece on the square is crowned.
+		 * @return True if the piece is crowned, false otherwise.
+		 */
 		bool isCrowned() const { return crowned; }
+
+		/**
+		 * @brief Sets the crowned status of the piece on the square.
+		 * @param status: True to crown the piece, false to uncrown.
+		 */
 		void switchCrown(bool status) { crowned = status; return; }
+
+		/**
+		 * @brief Checks if the piece on the square is captured.
+		 * @return True if the piece is captured, false otherwise.
+		 */
 		bool isCaptured() const { return captured; }
+
+		/**
+		 * @brief Sets the captured status of the piece on the square.
+		 * @param status: True to mark the piece as captured, false otherwise.
+		 */
 		void switchCap(bool status) { captured = status; return; }
 
+		/**
+		 * @brief Changes the color of the piece on the square.
+		 * @param newColor: New color character for the piece.
+		 */
 		void changeColor(char newColor);
 
+		/**
+		 * @brief Default constructor for Square.
+		 */
 		Square();
+
+		/**
+		 * @brief Constructor for Square with color, square name, and row.
+		 * @param c_: Color of the piece.
+		 * @param s_: Name of the square.
+		 * @param r_: Row of the square.
+		 */
 		Square(char c_, std::string s_, char r_);
 
-		std::vector<std::string> setFrtAdjSqs(std::string sq); //sets std::vector<std::string> FrtAdjSqs
-		std::vector<std::string> setBacAdjSqs(std::string sq); //sets std::vector<std::string> BacAdjSqs
-		std::vector<std::string> setFrtJmpSqs(std::string sq); //sets std::vector<std::string> frontJumpSqs
-		std::vector<std::string> setBacJmpSqs(std::string sq); //sets std::vector<std::string> backJumpSqs
+		/**
+		 * @brief Sets the adjacent squares in front of the square.
+		 * @param sq: Name of the square for which to set adjacent squares.
+		 * @return Vector of strings representing front adjacent squares.
+		 */
+		std::vector<std::string> setFrtAdjSqs(std::string sq);
+
+		/**
+		 * @brief Sets the adjacent squares behind the square.
+		 * @param sq: Name of the square for which to set adjacent squares.
+		 * @return Vector of strings representing back adjacent squares.
+		 */
+		std::vector<std::string> setBacAdjSqs(std::string sq);
+
+		/**
+		 * @brief Sets the squares for forward jumps from the square.
+		 * @param sq: Name of the square for which to set jump squares.
+		 * @return Vector of strings representing forward jump squares.
+		 */
+		std::vector<std::string> setFrtJmpSqs(std::string sq);
+
+		/**
+		 * @brief Sets the squares for backward jumps from the square.
+		 * @param sq: Name of the square for which to set jump squares.
+		 * @return Vector of strings representing backward jump squares.
+		 */
+		std::vector<std::string> setBacJmpSqs(std::string sq);
 
 	private:
-		//10 members
-		char c;
-		//color of piece on it
-			//'r' for red
-			//'R' for crowned red
-			//'b' for black
-			//'B' for crowned black
-			//' ' for none
-		std::string s;  //square name; could be a1, e5, etc.
-		char r;  //row; could be 1,2,3,...8
-		std::vector<std::string> frtAdjSqs; //holds adjacent squares in front
-		std::vector<std::string> bacAdjSqs; //holds adjacent squares in back
-		//std::vector<std::string> adjSqs; //holds adjacent squares
-		std::vector<std::string> frtJmpSqs; //holds squares that are two away in front
-		//used to detect a capture
-		std::vector<std::string> bacJmpSqs; //holds squares that are two away in back
-		//used to detect a capture by crowned pieces
-		bool crowned; //is the piece on this square crowned?
-		//if a piece is crowned, it can move backwards in default game mode
-		bool captured; //is the piece on this square captured?
+		char c;  ///< Color of the piece on the square ('r', 'R', 'b', 'B', ' ').
+		std::string s;  ///< Square name (e.g., "a1", "e5").
+		char r;  ///< Row number (1 to 8).
+		std::vector<std::string> frtAdjSqs; ///< Front adjacent squares.
+		std::vector<std::string> bacAdjSqs; ///< Back adjacent squares.
+		std::vector<std::string> frtJmpSqs; ///< Squares for forward jumps.
+		std::vector<std::string> bacJmpSqs; ///< Squares for backward jumps.
+		bool crowned; ///< Indicates if the piece on the square is crowned.
+		bool captured; ///< Indicates if the piece on the square is captured.
 	};
 
-} // namespace sq
+}
 using namespace sq;
 
+/**
+ * @namespace checkers
+ * @brief defines global variables for Checkers game
+ */
 namespace checkers {
+
+	/**
+	 * @var extern std::vector<Square> squares
+	 * @brief Represents all squares on the checkers board.
+	 *
+	 * This vector stores instances of the Square struct, each representing
+	 * a square on the checkers board.
+	 */
 	extern std::vector<Square> squares;
-	extern std::string selection; //all input by the user is held by this variable
-	extern char turn; //either 'r' (Red) or 'b' (Black)
-	extern char captureDirection; //either 'R' (right) or 'L' (left)
-	extern char initialRowParity; //either 'O' (odd) or 'E' (even)
-	extern bool wasCapture; //was there a capture this turn?
-	//used to determine whether to check for consecutive capture
-	extern char loser; //either 'r' (Red) or 'b' (Black)
-	//who is the loser?
 
+	/**
+	 * @var extern std::string selection
+	 * @brief Holds all user input.
+	 *
+	 * This string variable is used to store the input provided by the user
+	 * during the game.
+	 */
+	extern std::string selection;
 
-	extern int selector; //for debugging
-	//for vector location:
-	extern int selected; //holds vector address of square of selected piece
-	extern int targeted; //holds vector address of square to move a piece to
-	extern int inBetween; //holds vector address of square in between the
-	//selected and targeted squares (in case of capture)
-} // namespace checkers
+	/**
+	 * @var extern char turn
+	 * @brief Indicates whose turn it is to play.
+	 *
+	 * This character can be either 'r' (Red) or 'b' (Black) to represent
+	 * which player's turn it is.
+	 */
+	extern char turn;
+
+	/**
+	 * @var extern char captureDirection
+	 * @brief Indicates the direction of capture.
+	 *
+	 * This character can be either 'R' (right) or 'L' (left) to specify
+	 * the direction in which a capture is made.
+	 */
+	extern char captureDirection;
+
+	/**
+	 * @var extern char initialRowParity
+	 * @brief Represents the parity of the initial row.
+	 *
+	 * This character can be either 'O' (odd) or 'E' (even), indicating the
+	 * parity of the row where a move starts.
+	 */
+	extern char initialRowParity;
+
+	/**
+	 * @var extern bool wasCapture
+	 * @brief Indicates if there was a capture this turn.
+	 *
+	 * This boolean is used to determine whether a capture has been made
+	 * during the current turn.
+	 */
+	extern bool wasCapture;
+
+	/**
+	 * @var extern char loser
+	 * @brief Indicates the loser of the game.
+	 *
+	 * This character can be either 'r' (Red), 'b' (Black) of 'x' (in case of draw),
+	 * identifying which player has lost the game.
+	 */
+	extern char loser;
+
+	/**
+	 * @var extern int selector
+	 * @brief Holds the game mode selected by the user.
+	 *
+	 * This integer stores the game mode selected by the user, which is used
+	 * to determine the game's difficulty.
+	 */
+	extern int selector;
+
+	/**
+	 * @var extern int selected
+	 * @brief Holds the vector address of the selected piece's square.
+	 *
+	 * This integer stores the index of the square in the 'squares' vector
+	 * where the currently selected piece is located.
+	 */
+	extern int selected;
+
+	/**
+	 * @var extern int targeted
+	 * @brief Holds the vector address of the target square for a piece's move.
+	 *
+	 * This integer stores the index of the square in the 'squares' vector
+	 * where the currently selected piece is intended to move.
+	 */
+	extern int targeted;
+
+	/**
+	 * @var extern int inBetween
+	 * @brief Holds the vector address of the square between the selected and targeted squares.
+	 *
+	 * This integer stores the index of the square in the 'squares' vector that
+	 * lies between the selected and targeted squares, particularly in case of a capture move.
+	 */
+	extern int inBetween;
+
+}
 using namespace checkers;
 
+/**
+ * @namespace constants
+ * @brief Namespace for defining constants used in the checkers game.
+ */
 namespace constants {
+	/** @brief Constant for red game piece. */
 	extern const char Red = 'r';
-	extern const char cRed = 'R'; //crowned red
+
+	/** @brief Constant for crowned red game piece. */
+	extern const char cRed = 'R';
+
+	/** @brief Constant for black game piece. */
 	extern const char Black = 'b';
-	extern const char cBlack = 'B'; //crowned black
-	extern const char Both = 'x'; //in case of a tie, char loser = Both
+
+	/** @brief Constant for crowned black game piece. */
+	extern const char cBlack = 'B';
+
+	/** @brief Constant used in case of a tie. */
+	extern const char Both = 'x';
+
+	/** @brief Constant representing the left direction. */
 	extern const char Left = 'L';
+
+	/** @brief Constant representing the right direction. */
 	extern const char Right = 'R';
+
+	/** @brief Constant for odd number identifier. */
 	extern const char Odd = 'O';
+
+	/** @brief Constant for even number identifier. */
 	extern const char Even = 'E';
-	extern const int lowVectorRange = 0; //lowest subscript within range of vector
 
-	//addresses of squares at ends of board (for detecting promotion):
-	extern const int b8 = 28;
-	extern const int d8 = 29;
-	extern const int f8 = 30;
-	extern const int h8 = 31;
-	extern const int a1 = 0;
-	extern const int c1 = 1;
-	extern const int e1 = 2;
-	extern const int g1 = 3;
+	/** @brief The lowest valid subscript within a vector's range. */
+	extern const int lowVectorRange = 0;
 
-	//for capturing (see description at top of mainGame.cpp for explanation):
-	extern const int rOddRightCapJmp = 9; //distance from start to landing square if
-	//piece starts on odd row heading right
-	//red's first capture condition true
-	extern const int rOddRightHafJmp = 4; //distance from start to in-between square if
-	//piece starts on odd row heading right
-	//red's first capture condition true
-//following constants follow same pattern
-	extern const int rEvenRightCapJmp = 9; //red's second capture condition
+	// Constants representing board positions for promotion detection
+	extern const int b8 = 28; ///< Position for b8 square.
+	extern const int d8 = 29; ///< Position for d8 square.
+	extern const int f8 = 30; ///< Position for f8 square.
+	extern const int h8 = 31; ///< Position for h8 square.
+	extern const int a1 = 0;  ///< Position for a1 square.
+	extern const int c1 = 1;  ///< Position for c1 square.
+	extern const int e1 = 2;  ///< Position for e1 square.
+	extern const int g1 = 3;  ///< Position for g1 square.
+
+	/**
+	  * @brief Distance from start to landing square if piece starts on an odd row heading right.
+	  *
+	  * Represents the jump distance for a red piece when the first capture condition is true,
+	  * starting from an odd row and moving right.
+	  */
+	extern const int rOddRightCapJmp = 9;
+
+	/**
+	 * @brief Distance from start to in-between square if piece starts on an odd row heading right.
+	 *
+	 * Represents the intermediate distance for a red piece under the first capture condition,
+	 * starting from an odd row and moving right.
+	 */
+	extern const int rOddRightHafJmp = 4;
+
+	/**
+	 * @brief Red's second capture condition for even rows heading right.
+	 *
+	 * Represents the jump distance for a red piece when the second capture condition is true,
+	 * starting from an even row and moving right.
+	 */
+	extern const int rEvenRightCapJmp = 9;
+
+	/**
+	 * @brief Intermediate jump distance for red's second capture condition on even rows.
+	 *
+	 * Represents the intermediate distance for a red piece under the second capture condition,
+	 * starting from an even row and moving right.
+	 */
 	extern const int rEvenRightHafJmp = 5;
 
-	extern const int rOddLeftCapJmp = 7; //red's third capture condition
+	/**
+	 * @brief Red's third capture condition for odd rows heading left.
+	 *
+	 * Represents the jump distance for a red piece when the third capture condition is true,
+	 * starting from an odd row and moving left.
+	 */
+	extern const int rOddLeftCapJmp = 7;
+
+	/**
+	 * @brief Intermediate jump distance for red's third capture condition on odd rows.
+	 *
+	 * Represents the intermediate distance for a red piece under the third capture condition,
+	 * starting from an odd row and moving left.
+	 */
 	extern const int rOddLeftHafJmp = 3;
 
-	extern const int rEvenLeftCapJmp = 7; //red's fourth capture condition
+	/**
+	 * @brief Red's fourth capture condition for even rows heading left.
+	 *
+	 * Represents the jump distance for a red piece when the fourth capture condition is true,
+	 * starting from an even row and moving left.
+	 */
+	extern const int rEvenLeftCapJmp = 7;
+
+	/**
+	 * @brief Intermediate jump distance for red's fourth capture condition on even rows.
+	 *
+	 * Represents the intermediate distance for a red piece under the fourth capture condition,
+	 * starting from an even row and moving left.
+	 */
 	extern const int rEvenLeftHafJmp = 4;
 
-	extern const int bOddLeftCapJmp = -9; //black's first capture condition
+	/**
+	 * @brief Black's first capture condition for odd rows heading left.
+	 *
+	 * Represents the jump distance for a black piece when the first capture condition is true,
+	 * starting from an odd row and moving left.
+	 */
+	extern const int bOddLeftCapJmp = -9;
+
+	/**
+	 * @brief Intermediate jump distance for black's first capture condition on odd rows.
+	 *
+	 * Represents the intermediate distance for a black piece under the first capture condition,
+	 * starting from an odd row and moving left.
+	 */
 	extern const int bOddLeftHafJmp = -5;
 
-	extern const int bEvenLeftCapJmp = -9; //black's second capture condition
+	/**
+	 * @brief Black's second capture condition for even rows heading left.
+	 *
+	 * Represents the jump distance for a black piece when the second capture condition is true,
+	 * starting from an even row and moving left.
+	 */
+	extern const int bEvenLeftCapJmp = -9;
+
+	/**
+	 * @brief Intermediate jump distance for black's second capture condition on even rows.
+	 *
+	 * Represents the intermediate distance for a black piece under the second capture condition,
+	 * starting from an even row and moving left.
+	 */
 	extern const int bEvenLeftHafJmp = -4;
 
-	extern const int bOddRightCapJmp = -7; //black's third capture condition
+	/**
+	 * @brief Black's third capture condition for odd rows heading right.
+	 *
+	 * Represents the jump distance for a black piece when the third capture condition is true,
+	 * starting from an odd row and moving right.
+	 */
+	extern const int bOddRightCapJmp = -7;
+
+	/**
+	 * @brief Intermediate jump distance for black's third capture condition on odd rows.
+	 *
+	 * Represents the intermediate distance for a black piece under the third capture condition,
+	 * starting from an odd row and moving right.
+	 */
 	extern const int bOddRightHafJmp = -4;
 
-	extern const int bEvenRightCapJmp = -7; //black's fourth capture condition
+	/**
+	 * @brief Black's fourth capture condition for even rows heading right.
+	 *
+	 * Represents the jump distance for a black piece when the fourth capture condition is true,
+	 * starting from an even row and moving right.
+	 */
+	extern const int bEvenRightCapJmp = -7;
+
+	/**
+	 * @brief Intermediate jump distance for black's fourth capture condition on even rows.
+	 *
+	 * Represents the intermediate distance for a black piece under the fourth capture condition,
+	 * starting from an even row and moving right.
+	 */
 	extern const int bEvenRightHafJmp = -3;
-}
+	
+};
 using namespace constants;
 
+
+/**
+ * @brief Displays the game board.
+ * @param sqVect: The vector of Square objects representing the game board.
+ */
 void displayBoard(const std::vector<Square>& sqVect);
 
+/**
+ * @brief Prepares the game for play.
+ *
+ * This function initializes the game by setting up the checkers board
+ * and other necessary variables.
+ */
 void prepareGame();
+
+/**
+ * @brief Saves the game state to a file.
+ *
+ * @param squares: Pointer to the vector of Square objects representing the game board.
+ * @param turn_: The current turn ('r' for Red, 'b' for Black).
+ * @param selector_: The game mode selected by the user.
+ * @return True if the game was successfully saved, false otherwise.
+ */
 bool saveGame(std::vector<Square>* squares, char turn_, int selector_);
+
+/**
+ * @brief Loads the game state from a file.
+ *
+ * This function loads the game state from a file and updates the provided
+ * vector of squares, turn, and selector variables accordingly.
+ *
+ * @param squares: Pointer to the vector of squares representing the game board.
+ * @param turn_: Pointer to the variable representing the current player's turn.
+ * @param selector_: Pointer to the variable representing the game mode selected.
+ * @return True if the game state was successfully loaded, false otherwise.
+ */
 bool loadGame(std::vector<Square>* squares, char* turn_, int* selector_);
 
+/**
+ * @brief Checks if a given string represents a valid square on the checkers board.
+ * @param square: The string representing the square.
+ * @return True if the string is a valid square, false otherwise.
+ */
 bool isSquare(std::string square);
-char reverseCrown(char color); //return crowned version of color ('R' or 'B')
-//or uncrowned version ('r' or 'b')
+
+/**
+ * @brief Reverses the crown status of a given color.
+ * @param color: The color character ('r' or 'b').
+ * @return The crowned version of the color ('R' or 'B') if uncrowned, or the uncrowned version ('r' or 'b') if crowned.
+ */
+char reverseCrown(char color);
+
+/**
+ * @brief Checks if the current player cannot make any valid moves.
+ * @return True if the current player cannot make any moves, false otherwise.
+ */
 bool cannotMakeMove();
+
+/**
+ * @brief Checks if a movement from the initial square to the target square is possible.
+ * @param: initSq: Pointer to the initial square.
+ * @return True if the movement is possible, false otherwise.
+ */
 bool possibleMovement(Square* initSq);
 
+/**
+ * @brief Gets the user's input for the square.
+ * 
+ * This function gets the user's input for the square to select.
+ * If the input is invalid, the function calls itself recursively.
+ * Otherwise, the function returns.
+ */
 void getSquare();
-//void AI_GetSquare();
+
+/**
+ * @brief Checks if a given string represents a valid square on the checkers board.
+ * @param sq: The string representing the square.
+ * @return True if the string is a valid square, false otherwise.
+ */
 bool goodSquare(std::string sq);
+
+/**
+ * @brief Gets the user's input for the target square.
+ * 
+ * This function gets the user's input for the target square.
+ * If the input is invalid, the function calls itself recursively.
+ * Otherwise, the function returns.
+ */
 void getTarget();
-//void AI_GetTarget();
+
+/**
+ * @brief Checks if a given string represents a valid target square on the checkers board.
+ * @param sq: The string representing the target square.
+ * @return True if the string is a valid target square, false otherwise.
+ */
 bool goodTarget(std::string sq);
 
+/**
+ * @brief Checks if the initial square is one square away from the target square in the forward direction.
+ * @return True if the initial square is one square away from the target square in the forward direction, false otherwise.
+ */
 bool oneFrSqAway();
+
+/**
+ * @brief Checks if the initial square is one square away from the target square in the backward direction.
+ * @return True if the initial square is one square away from the target square in the backward direction, false otherwise.
+ */
 bool oneBcSqAway();
+
+/**
+ * @brief Checks if the initial square is two squares away from the target square in the forward direction.
+ * @return True if the initial square is two squares away from the target square in the forward direction, false otherwise.
+ */
 bool twoFrSqAway();
+
+/**
+ * @brief Checks if the initial square is two squares away from the target square in the backward direction.
+ * @return True if the initial square is two squares away from the target square in the backward direction, false otherwise.
+ */
 bool twoBcSqAway();
 
+/**
+ * @brief Gets the index of the square in the 'squares' vector based on its name.
+ * @param sq: The name of the square.
+ * @return The index of the square in the 'squares' vector.
+ */
 int getAddress(std::string sq);
+
+/**
+ * @brief Gets the letter coordinate of a square.
+ * @param sq1: The name of the square.
+ * @return The letter coordinate of the square.
+ */
 char getLetCoordinate(std::string sq1);
+
+/**
+ * @brief Gets the name of the square between the initial square and the target square.
+ * @param initSq: Pointer to the initial square.
+ * @param targetSq: Pointer to the target square.
+ * @return The name of the square between the initial square and the target square.
+ */
 std::string getSqInBetween(Square* initSq, Square* targetSq);
+
+/**
+ * @brief Gets the direction of capture between the initial square and the target square.
+ * @param initSq: Pointer to the initial square.
+ * @param targetSq: Pointer to the target square.
+ * @return The direction of capture ('R' for right, 'L' for left).
+ */
 char getCapDirection(std::string* initSq, std::string* targetSq);
-char getRowParity(char row); //parity is oddness or evenness
 
-//these two functions are for crowned pieces in function Square getSqInBetween(...)
-bool upCapture(Square* initSq, Square* targetSq); //is the capture going upward (from our view)?
-bool downCapture(Square* initSq, Square* targetSq); //is the capture going downward?
+/**
+ * @brief Gets the parity (oddness or evenness) of a row.
+ * @param row: The row number.
+ * @return The parity of the row ('O' for odd, 'E' for even).
+ */
+char getRowParity(char row);
 
+/**
+ * @brief Checks if the capture is going upward (from our view) for a crowned piece.
+ * @param initSq: Pointer to the initial square.
+ * @param targetSq: Pointer to the target square.
+ * @return True if the capture is going upward, false otherwise.
+ */
+bool upCapture(Square* initSq, Square* targetSq);
+
+/**
+ * @brief Checks if the capture is going downward for a crowned piece.
+ * @param initSq: Pointer to the initial square.
+ * @param targetSq: Pointer to the target square.
+ * @return True if the capture is going downward, false otherwise.
+ */
+bool downCapture(Square* initSq, Square* targetSq);
+
+/**
+ * @brief Checks if the first capture condition for red pieces is met.
+ * @return True if the first capture condition is met, false otherwise.
+ */
 bool R_Capture1();
+
+/**
+ * @brief Checks if the second capture condition for red pieces is met.
+ * @return True if the second capture condition is met, false otherwise.
+ */
 bool R_Capture2();
+
+/**
+ * @brief Checks if the third capture condition for red pieces is met.
+ * @return True if the third capture condition is met, false otherwise.
+ */
 bool R_Capture3();
+
+/**
+ * @brief Checks if the fourth capture condition for red pieces is met.
+ * @return True if the fourth capture condition is met, false otherwise.
+ */
 bool R_Capture4();
+
+/**
+ * @brief Checks if the first capture condition for black pieces is met.
+ * @return True if the first capture condition is met, false otherwise.
+ */
 bool B_Capture1();
+
+/**
+ * @brief Checks if the second capture condition for black pieces is met.
+ * @return True if the second capture condition is met, false otherwise.
+ */
 bool B_Capture2();
+
+/**
+ * @brief Checks if the third capture condition for black pieces is met.
+ * @return True if the third capture condition is met, false otherwise.
+ */
 bool B_Capture3();
+
+/**
+ * @brief Checks if the fourth capture condition for black pieces is met.
+ * @return True if the fourth capture condition is met, false otherwise.
+ */
 bool B_Capture4();
 
+/**
+ * @brief Gets the opposite color of a given color.
+ * @param color: The color character ('r' or 'b').
+ * @return The opposite color character ('b' or 'r').
+ */
 char oppoColor(char color);
-bool isCapture(); //is a capture occuring?
+
+/**
+ * @brief Checks if a capture is occurring.
+ * @return True if a capture is occurring, false otherwise.
+ */
+bool isCapture();
+
+/**
+ * @brief Updates the checkers board after a move.
+ */
 void updateBoard();
-bool isPromotion(); //is there a promotion (to a crowned piece)?
-bool possibleCapture(Square* initSq); //is a capture possible?
-void getConsecutiveJmpTarget(); //get user's target for consecutive captures
+
+/**
+ * @brief Checks if a promotion (to a crowned piece) is occurring.
+ * @return True if a promotion is occurring, false otherwise.
+ */
+bool isPromotion();
+
+/**
+ * @brief Checks if a capture is possible from the initial square.
+ * @param initSq: Pointer to the initial square.
+ * @return True if a capture is possible, false otherwise.
+ */
+bool possibleCapture(Square* initSq);
+
+/**
+ * @brief Gets the user's input for the target square in consecutive captures.
+ */
+void getConsecutiveJmpTarget();
+
+/**
+ * @brief Checks if a given string represents a valid target square in consecutive captures.
+ * @param sq: The string representing the target square.
+ * @return True if the string is a valid target square, false otherwise.
+ */
 bool goodConsecutiveJmpTarget(std::string sq);
 
+/**
+ * @brief Displays the help information.
+ */
 void displayHelp();
+
+/**
+ * @brief Displays the main menu.
+ */
 void displayMenu();
+
+/**
+ * @brief Displays the game mode options.
+ */
 void displayMods();
 
+/**
+ * @brief Handles the player's turn.
+ */
 void playerTurn();
+
+/**
+ * @brief Handles the AI's turn.
+ */
 void AI_Turn();
 
-bool gameOver(); //is it game over?
+/**
+ * @brief Checks if the game is over.
+ * @return True if the game is over, false otherwise.
+ */
+bool gameOver();
 
+/**
+ * @brief Handles the end of the game.
+ * 
+ * 
+ */
 void checkersGame(int selector_);
+
+/**
+ * @brief Handles the loss of a player.
+ */
 void handleLoss();
+
+/**
+ * @brief Asks the player if they want to play again.
+ * @return True if the player wants to play again, false otherwise.
+ */
 bool playAgain();
+
+/**
+ * @brief Exits the game.
+ */
 void exit();
 
+/**
+ * @brief Shuffles an array.
+ * @param array: The array to shuffle.
+ * @param size: The size of the array.
+ */
 void shuffleArray(int* array, int size);
 
+/**
+ * @brief Displays an error message.
+ * @param message: The error message to display.
+ */
 void error(std::string message);
 
 

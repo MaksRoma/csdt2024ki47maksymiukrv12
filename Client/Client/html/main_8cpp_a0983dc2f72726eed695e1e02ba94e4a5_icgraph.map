@@ -1,0 +1,16 @@
+<map id="isPromotion" name="isPromotion">
+<area shape="rect" id="Node000001" title="Checks if a promotion (to a crowned piece) is occurring." alt="" coords="532,31,622,57"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a4079de1fcd3b298478a8898cda44aca6" title="Updates the checkers board after a move." alt="" coords="389,31,484,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="516,47,484,47,484,41,516,41"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a90b3836b9eba943e77dc3882bb7b1948" title="Handles the AI&#39;s turn." alt="" coords="268,5,333,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="374,35,333,27,334,22,375,30"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#ab6000d2760ac7418a03ba8b5834d7b12" title="Handles the player&#39;s turn." alt="" coords="260,56,341,83"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="375,58,342,64,341,59,374,53"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a025fad89c575a0bb2ff9f8e3b4c6e658" title="Handles the end of the game." alt="" coords="103,31,212,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="253,30,213,37,212,32,252,24"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="178,17,171,12,157,9,145,11,138,16,136,22,140,29,135,31,131,22,134,13,143,6,157,4,173,7,182,13"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="87,47,55,47,55,41,87,41"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="51,17,44,12,30,9,17,11,11,16,9,22,12,29,7,31,4,22,6,13,15,6,30,4,46,7,54,13"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="244,62,212,56,213,51,245,57"/>
+</map>

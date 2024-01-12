@@ -1,0 +1,25 @@
+<map id="twoFrSqAway" name="twoFrSqAway">
+<area shape="rect" id="Node000001" title="Checks if the initial square is two squares away from the target square in the forward direction." alt="" coords="834,79,935,105"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a10ab321147c3d6804300d75fa361ed0f" title="Checks if a given string represents a valid target square in consecutive captures." alt="" coords="607,41,786,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="818,82,767,71,768,66,819,76"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html#adac86a04deae73f72e7e3fa2b5e6af87" title="Checks if a given string represents a valid target square on the checkers board." alt="" coords="654,104,739,131"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="819,103,740,114,739,109,818,98"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ac4e03abd4762e163fa6b5ba0fdfdae1e" title="Gets the user&#39;s input for the target square in consecutive captures." alt="" coords="389,29,559,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="591,52,559,50,559,45,591,46"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="503,16,493,10,474,8,456,10,446,15,444,20,449,28,444,30,439,21,443,11,455,5,474,3,495,5,506,12"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#ab6000d2760ac7418a03ba8b5834d7b12" title="Handles the player&#39;s turn." alt="" coords="260,104,341,131"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="407,64,390,70,325,106,322,101,388,66,405,59"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a025fad89c575a0bb2ff9f8e3b4c6e658" title="Handles the end of the game." alt="" coords="103,129,212,156"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="245,130,213,136,212,130,244,125"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="178,116,171,110,157,108,145,110,138,114,136,120,140,128,135,130,131,121,134,111,143,105,157,103,173,105,182,112"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,129,55,156"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="87,145,55,145,55,140,87,140"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="51,116,44,110,30,108,17,110,11,114,9,120,12,128,7,130,4,121,6,111,15,105,30,103,46,105,54,112"/>
+<area shape="rect" id="Node000008" href="$main_8cpp.html#a90b3836b9eba943e77dc3882bb7b1948" title="Handles the AI&#39;s turn." alt="" coords="268,155,333,181"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="639,132,559,145,434,160,334,168,333,163,434,154,558,140,638,126"/>
+<area shape="rect" id="Node000009" href="$main_8cpp.html#a9da299d04c469aafadbde4dc6e8575dd" title="Gets the user&#39;s input for the target square." alt="" coords="436,104,512,131"/>
+<area shape="poly" id="edge12_Node000007_Node000009" title=" " alt="" coords="638,120,512,120,512,115,638,115"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="252,162,212,155,213,150,253,157"/>
+<area shape="poly" id="edge14_Node000009_Node000004" title=" " alt="" coords="421,120,342,120,342,115,421,115"/>
+<area shape="poly" id="edge13_Node000009_Node000009" title=" " alt="" coords="503,91,493,85,474,83,456,85,446,89,444,95,449,102,444,105,439,95,443,86,455,80,474,77,495,80,506,86"/>
+</map>

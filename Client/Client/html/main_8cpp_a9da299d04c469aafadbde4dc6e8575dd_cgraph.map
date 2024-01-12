@@ -1,0 +1,87 @@
+<map id="getTarget" name="getTarget">
+<area shape="rect" id="Node000001" title="Gets the user&#39;s input for the target square." alt="" coords="5,93,81,120"/>
+<area shape="poly" id="edge14_Node000001_Node000001" title=" " alt="" coords="20,94,16,85,19,75,28,69,43,67,59,69,67,76,64,80,57,74,43,72,30,74,23,78,22,84,25,92"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a32afc8bcc4adc7a744a1bd2abd1a8dfa" title="Displays the game board." alt="" coords="267,5,363,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,90,128,68,251,31,252,37,130,73,75,95"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a1451d6a0f33f9d0a02a4b055e5839e6e" title="Displays the help information." alt="" coords="271,56,359,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="81,99,128,92,255,75,256,80,129,97,82,104"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#acf237e6c08daae1ea94e26660bb4382c" title="Gets the user&#39;s input for the square." alt="" coords="131,131,212,157"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="82,115,117,125,115,131,80,120"/>
+<area shape="rect" id="Node000011" href="$main_8cpp.html#adac86a04deae73f72e7e3fa2b5e6af87" title="Checks if a given string represents a valid target square on the checkers board." alt="" coords="129,335,214,361"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="54,119,158,320,154,322,49,122"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="180,129,213,87,260,42,266,38,269,42,264,46,217,91,184,132"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="196,128,261,92,270,88,272,92,263,97,198,132"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="148,131,145,122,147,113,157,106,171,104,187,107,196,113,192,117,185,112,171,109,158,111,152,116,150,122,153,129"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a5384af9337d2aa27ad1b6057d05d56d9" title="Checks if a given string represents a valid square on the checkers board." alt="" coords="270,208,360,235"/>
+<area shape="poly" id="edge7_Node000004_Node000005" title=" " alt="" coords="199,155,276,198,274,202,197,160"/>
+<area shape="rect" id="Node000010" href="$main_8cpp.html#a53c072a8b2ad52c1a4698a41455a96ee" title="Saves the game state to a file." alt="" coords="274,107,356,133"/>
+<area shape="poly" id="edge13_Node000004_Node000010" title=" " alt="" coords="212,135,258,127,259,132,212,140"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#acd89b45f1ca595cd4f039248383640e7" title="Gets the index of the square in the &#39;squares&#39; vector based on its name." alt="" coords="430,259,518,285"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="360,233,416,251,415,256,359,238"/>
+<area shape="rect" id="Node000008" href="$main_8cpp.html#acee34386446af2988113888c81b75d8f" title="Checks if a given string represents a valid square on the checkers board." alt="" coords="438,157,510,184"/>
+<area shape="poly" id="edge10_Node000005_Node000008" title=" " alt="" coords="359,205,423,184,424,189,360,210"/>
+<area shape="rect" id="Node000009" href="$main_8cpp.html#ac5dcb740f437eaf0c93cd496212e7812" title="Reverses the crown status of a given color." alt="" coords="425,208,523,235"/>
+<area shape="poly" id="edge11_Node000005_Node000009" title=" " alt="" coords="361,219,409,219,409,224,361,224"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html#aa35e8ed4e03646e6b2f0702612610d98" title="Displays an error message." alt="" coords="947,664,995,691"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="518,262,599,255,650,255,703,259,758,269,810,286,859,311,901,346,916,369,929,402,949,487,962,577,970,648,965,649,957,578,944,488,924,404,911,372,897,350,856,316,808,291,757,274,703,265,650,261,600,261,518,268"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="523,210,607,202,657,202,710,206,763,216,814,232,861,258,901,293,918,321,932,360,952,461,965,566,971,648,966,649,959,567,947,462,927,362,913,323,897,296,858,262,812,237,761,221,709,211,657,208,607,208,524,215"/>
+<area shape="poly" id="edge16_Node000011_Node000006" title=" " alt="" coords="182,360,213,406,236,429,263,447,292,459,317,464,341,461,367,447,382,432,390,416,394,381,396,343,402,323,414,302,425,292,428,296,418,306,407,325,401,344,399,382,396,418,387,435,370,451,342,466,317,470,291,464,261,452,232,433,209,409,178,363"/>
+<area shape="poly" id="edge47_Node000011_Node000008" title=" " alt="" coords="174,333,184,303,201,265,226,226,261,194,300,175,343,165,385,161,422,162,422,167,385,167,343,170,302,180,263,198,230,229,206,267,189,305,179,335"/>
+<area shape="rect" id="Node000012" href="$main_8cpp.html#a25e71a3927de87511fb9f727c22fc92a" title="Checks if a capture is occurring." alt="" coords="277,512,353,539"/>
+<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="181,361,212,421,236,458,264,491,275,501,272,505,260,495,231,461,207,424,176,363"/>
+<area shape="rect" id="Node000031" href="$main_8cpp.html#af6444da7d0d3875fab07b60a3dcfac4b" title="Checks if the initial square is one square away from the target square in the backward direction." alt="" coords="262,259,368,285"/>
+<area shape="poly" id="edge48_Node000011_Node000031" title=" " alt="" coords="195,332,261,295,270,290,272,295,263,300,198,336"/>
+<area shape="rect" id="Node000032" href="$main_8cpp.html#a69f8931f6b75d0dc8a5d32478970b8c6" title="Checks if the initial square is one square away from the target square in the forward direction." alt="" coords="264,309,366,336"/>
+<area shape="poly" id="edge49_Node000011_Node000032" title=" " alt="" coords="214,338,248,332,249,337,215,343"/>
+<area shape="rect" id="Node000033" href="$main_8cpp.html#afe5da822f6a89a5875cd02a5cd0c6556" title="Checks if the initial square is two squares away from the target square in the backward direction." alt="" coords="263,360,368,387"/>
+<area shape="poly" id="edge50_Node000011_Node000033" title=" " alt="" coords="215,353,248,359,247,364,214,358"/>
+<area shape="rect" id="Node000034" href="$main_8cpp.html#af1ba1f868f9883399fbc460f3d17f71d" title="Checks if the initial square is two squares away from the target square in the forward direction." alt="" coords="265,411,366,437"/>
+<area shape="poly" id="edge51_Node000011_Node000034" title=" " alt="" coords="198,360,263,396,272,401,270,406,261,401,195,364"/>
+<area shape="poly" id="edge22_Node000012_Node000006" title=" " alt="" coords="346,509,366,492,381,467,387,443,389,398,391,352,399,328,414,302,424,293,428,296,418,306,404,330,396,353,395,398,393,444,385,469,370,495,349,513"/>
+<area shape="poly" id="edge46_Node000012_Node000009" title=" " alt="" coords="326,510,346,482,366,448,376,419,381,392,382,343,387,296,397,271,414,245,416,243,420,246,418,248,401,274,392,297,387,343,386,392,381,420,371,450,351,485,330,513"/>
+<area shape="rect" id="Node000013" href="$main_8cpp.html#a52ccf5161f316f570a7fb78ff2298c47" title="Checks if the first capture condition for black pieces is met." alt="" coords="429,512,519,539"/>
+<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="354,523,414,523,414,528,354,528"/>
+<area shape="rect" id="Node000014" href="$main_8cpp.html#aeae2ab8f2fc003959eb52028daf56887" title="Checks if the second capture condition for black pieces is met." alt="" coords="429,563,519,589"/>
+<area shape="poly" id="edge19_Node000012_Node000014" title=" " alt="" coords="355,535,416,555,415,560,353,540"/>
+<area shape="rect" id="Node000015" href="$main_8cpp.html#a356efe5ecb1048189163d6f63ec69f63" title="Checks if the third capture condition for black pieces is met." alt="" coords="429,613,519,640"/>
+<area shape="poly" id="edge20_Node000012_Node000015" title=" " alt="" coords="334,537,371,567,418,599,426,604,424,609,415,604,368,571,330,541"/>
+<area shape="rect" id="Node000016" href="$main_8cpp.html#adcce90aa1fdb926e9e12dba5f2dd88d4" title="Checks if the fourth capture condition for black pieces is met." alt="" coords="429,664,519,691"/>
+<area shape="poly" id="edge21_Node000012_Node000016" title=" " alt="" coords="327,538,362,591,388,622,418,650,423,654,420,658,415,654,384,626,358,594,322,541"/>
+<area shape="rect" id="Node000017" href="$main_8cpp.html#a9328a88ac2d57db8fd309865d4e9caf4" title="Gets the direction of capture between the initial square and the target square." alt="" coords="599,765,713,792"/>
+<area shape="poly" id="edge23_Node000012_Node000017" title=" " alt="" coords="320,539,328,581,344,640,357,671,373,701,393,729,418,751,457,772,499,783,543,787,584,786,584,791,543,792,499,788,455,777,415,756,389,732,368,704,352,674,339,642,322,583,315,539"/>
+<area shape="rect" id="Node000019" href="$main_8cpp.html#ac676692a01e252f475f17f1099c4dd65" title="Gets the parity (oddness or evenness) of a row." alt="" coords="791,816,889,843"/>
+<area shape="poly" id="edge27_Node000012_Node000019" title=" " alt="" coords="319,539,324,588,338,658,350,695,368,731,390,764,418,791,459,817,505,834,553,846,602,851,696,850,775,840,776,846,696,856,602,857,552,851,503,839,457,821,415,795,386,767,363,734,346,697,333,659,319,589,314,539"/>
+<area shape="rect" id="Node000020" href="$main_8cpp.html#a064da5f2df167b0dd395aa172528c4e4" title="Gets the name of the square between the initial square and the target square." alt="" coords="416,715,532,741"/>
+<area shape="poly" id="edge29_Node000012_Node000020" title=" " alt="" coords="323,538,355,614,383,660,418,701,422,704,418,708,414,705,379,663,351,616,318,540"/>
+<area shape="rect" id="Node000026" href="$main_8cpp.html#accd6c42b592d7cf1b66b66acc3e85487" title="Gets the opposite color of a given color." alt="" coords="800,360,879,387"/>
+<area shape="poly" id="edge40_Node000012_Node000026" title=" " alt="" coords="332,509,350,492,366,472,375,454,380,437,383,404,390,374,399,359,415,346,461,322,512,308,564,304,617,306,668,314,716,326,794,351,792,356,715,331,667,320,617,312,564,309,513,314,463,327,418,350,404,363,395,376,389,405,385,438,380,456,371,475,354,496,336,513"/>
+<area shape="rect" id="Node000027" href="$main_8cpp.html#a30f7ecb4b3edd230d4c96c16b6215853" title="Checks if the first capture condition for red pieces is met." alt="" coords="429,867,519,893"/>
+<area shape="poly" id="edge42_Node000012_Node000027" title=" " alt="" coords="320,539,326,594,341,674,353,719,370,764,392,807,418,846,428,856,424,859,414,850,387,810,365,766,348,720,336,675,320,594,315,540"/>
+<area shape="rect" id="Node000028" href="$main_8cpp.html#acaedf5b0c0e97cc1e734aefddb79414b" title="Checks if the second capture condition for red pieces is met." alt="" coords="429,360,519,387"/>
+<area shape="poly" id="edge43_Node000012_Node000028" title=" " alt="" coords="343,509,366,492,382,467,389,444,397,421,414,397,418,393,422,397,418,400,401,424,394,446,387,470,370,495,347,514"/>
+<area shape="rect" id="Node000029" href="$main_8cpp.html#a1deee77354e81e7030b58256d5763b58" title="Checks if the third capture condition for red pieces is met." alt="" coords="429,411,519,437"/>
+<area shape="poly" id="edge44_Node000012_Node000029" title=" " alt="" coords="339,509,367,491,390,469,415,447,422,442,425,447,418,451,394,473,370,495,342,514"/>
+<area shape="rect" id="Node000030" href="$main_8cpp.html#a9ec887a779819da200349201e23d2646" title="Checks if the fourth capture condition for red pieces is met." alt="" coords="429,461,519,488"/>
+<area shape="poly" id="edge45_Node000012_Node000030" title=" " alt="" coords="353,511,415,491,416,496,355,516"/>
+<area shape="poly" id="edge24_Node000017_Node000007" title=" " alt="" coords="713,781,755,781,803,778,852,768,898,751,928,729,951,702,955,705,932,733,901,756,853,773,804,783,756,787,713,786"/>
+<area shape="rect" id="Node000018" href="$main_8cpp.html#a75f606a5b7602308585444e55454ffdb" title="Gets the letter coordinate of a square." alt="" coords="780,715,899,741"/>
+<area shape="poly" id="edge25_Node000017_Node000018" title=" " alt="" coords="706,762,773,743,774,749,708,767"/>
+<area shape="poly" id="edge26_Node000018_Node000007" title=" " alt="" coords="876,712,932,689,934,694,877,717"/>
+<area shape="poly" id="edge28_Node000019_Node000007" title=" " alt="" coords="872,813,898,795,916,774,933,750,956,704,961,706,937,752,921,777,901,799,875,818"/>
+<area shape="poly" id="edge32_Node000020_Node000007" title=" " alt="" coords="532,714,579,707,777,687,931,677,932,682,778,692,580,712,532,719"/>
+<area shape="poly" id="edge33_Node000020_Node000017" title=" " alt="" coords="525,739,591,758,590,763,524,745"/>
+<area shape="poly" id="edge34_Node000020_Node000018" title=" " alt="" coords="532,725,765,725,765,731,532,731"/>
+<area shape="rect" id="Node000021" href="$main_8cpp.html#a3bd337f7f23bdff359ac7160f2496664" title="Checks if the capture is going downward for a crowned piece." alt="" coords="608,512,704,539"/>
+<area shape="poly" id="edge30_Node000020_Node000021" title=" " alt="" coords="515,712,530,701,543,682,549,663,552,626,555,588,563,568,578,549,592,538,595,542,582,553,568,571,560,589,557,626,555,664,548,684,534,704,519,716"/>
+<area shape="rect" id="Node000022" href="$structsq_1_1_square.html#a7722787ed8b44c2245e511b44ca20615" title="Gets the row number of the square." alt="" coords="784,461,896,488"/>
+<area shape="poly" id="edge36_Node000020_Node000022" title=" " alt="" coords="517,712,530,701,548,668,554,635,552,603,547,570,542,538,542,507,553,476,578,447,603,431,631,423,661,419,691,421,749,434,798,452,796,457,748,439,690,426,661,425,632,428,606,436,581,451,557,479,548,508,547,538,552,569,557,602,559,636,553,670,534,704,520,716"/>
+<area shape="rect" id="Node000023" href="$structsq_1_1_square.html#a8c693a0b6cff429251b79e132da29b1c" title="Checks if the piece on the square is crowned." alt="" coords="580,563,732,589"/>
+<area shape="poly" id="edge35_Node000020_Node000023" title=" " alt="" coords="514,712,530,701,547,676,552,651,559,625,578,599,583,596,586,600,582,603,564,627,558,652,551,678,534,705,517,716"/>
+<area shape="rect" id="Node000024" href="$structsq_1_1_square.html#a5c8168b1f21b066a7c5e2ebc0420c558" title="Gets the name of the square." alt="" coords="590,613,722,640"/>
+<area shape="poly" id="edge37_Node000020_Node000024" title=" " alt="" coords="510,712,530,701,554,679,578,656,600,644,603,649,581,661,557,683,533,705,512,716"/>
+<area shape="rect" id="Node000025" href="$main_8cpp.html#a493e569a04a6b35eaf95ab89f1e271a6" title="Checks if the capture is going upward (from our view) for a crowned piece." alt="" coords="616,461,696,488"/>
+<area shape="poly" id="edge38_Node000020_Node000025" title=" " alt="" coords="516,712,530,701,546,675,553,650,554,625,552,600,550,575,552,550,560,524,578,498,600,483,603,487,582,502,565,527,557,551,555,575,557,600,559,625,558,651,551,677,534,704,519,716"/>
+<area shape="poly" id="edge31_Node000021_Node000022" title=" " alt="" coords="704,510,773,490,775,495,705,515"/>
+<area shape="poly" id="edge39_Node000025_Node000022" title=" " alt="" coords="696,472,768,472,768,477,696,477"/>
+<area shape="poly" id="edge41_Node000026_Node000007" title=" " alt="" coords="856,385,879,413,902,448,925,502,944,557,967,648,962,650,939,559,920,504,897,451,875,416,852,389"/>
+</map>

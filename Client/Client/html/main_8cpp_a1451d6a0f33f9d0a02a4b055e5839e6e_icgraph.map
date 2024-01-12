@@ -1,0 +1,20 @@
+<map id="displayHelp" name="displayHelp">
+<area shape="rect" id="Node000001" title="Displays the help information." alt="" coords="641,80,729,107"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#acf237e6c08daae1ea94e26660bb4382c" title="Gets the user&#39;s input for the square." alt="" coords="513,80,593,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="626,96,594,96,594,91,626,91"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a9da299d04c469aafadbde4dc6e8575dd" title="Gets the user&#39;s input for the target square." alt="" coords="389,29,465,56"/>
+<area shape="poly" id="edge11_Node000001_Node000003" title=" " alt="" coords="651,73,623,58,592,47,559,41,526,38,465,41,465,35,526,33,560,35,594,41,625,53,653,69"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,105,55,132"/>
+<area shape="poly" id="edge12_Node000001_Node000006" title=" " alt="" coords="627,114,534,136,481,144,428,147,299,147,161,139,55,125,56,120,161,133,299,141,428,141,481,138,533,131,625,109"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="573,67,566,61,553,59,540,61,534,65,532,71,535,79,530,81,527,71,529,62,538,56,553,53,568,56,577,63"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="503,76,461,59,463,54,505,71"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#ab6000d2760ac7418a03ba8b5834d7b12" title="Handles the player&#39;s turn." alt="" coords="260,80,341,107"/>
+<area shape="poly" id="edge10_Node000002_Node000004" title=" " alt="" coords="497,96,342,96,342,91,497,91"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="448,16,440,10,427,8,414,10,408,14,406,20,409,28,405,30,401,21,403,11,412,5,427,3,443,5,451,12"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="379,65,337,82,335,77,377,60"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a025fad89c575a0bb2ff9f8e3b4c6e658" title="Handles the end of the game." alt="" coords="103,80,212,107"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="244,96,212,96,212,91,244,91"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="178,67,171,61,157,59,145,61,138,65,136,71,140,79,135,81,131,71,134,62,143,56,157,53,173,56,182,63"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="88,110,56,116,55,111,87,105"/>
+<area shape="poly" id="edge9_Node000006_Node000006" title=" " alt="" coords="51,92,44,86,30,84,17,86,11,90,9,96,12,104,7,106,4,97,6,87,15,81,30,79,46,81,54,88"/>
+</map>

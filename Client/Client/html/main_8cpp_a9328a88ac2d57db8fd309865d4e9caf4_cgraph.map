@@ -1,0 +1,8 @@
+<map id="getCapDirection" name="getCapDirection">
+<area shape="rect" id="Node000001" title="Gets the direction of capture between the initial square and the target square." alt="" coords="5,5,119,32"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#aa35e8ed4e03646e6b2f0702612610d98" title="Displays an error message." alt="" coords="334,5,381,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,16,318,16,318,21,119,21"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a75f606a5b7602308585444e55454ffdb" title="Gets the letter coordinate of a square." alt="" coords="167,31,286,57"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,25,152,30,151,35,119,30"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="286,30,318,23,319,29,287,35"/>
+</map>

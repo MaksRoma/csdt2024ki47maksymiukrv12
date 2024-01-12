@@ -1,0 +1,10 @@
+<map id="prepareGame" name="prepareGame">
+<area shape="rect" id="Node000001" title="Prepares the game for play." alt="" coords="260,55,359,81"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a025fad89c575a0bb2ff9f8e3b4c6e658" title="Handles the end of the game." alt="" coords="103,29,212,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,60,212,54,213,49,245,55"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,55,81"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="244,71,55,71,55,65,244,65"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="178,16,171,10,157,8,145,10,138,14,136,20,140,28,135,30,131,21,134,11,143,5,157,3,173,5,182,12"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="88,59,56,66,55,61,87,54"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="51,41,44,36,30,33,17,35,11,40,9,46,12,53,7,55,4,46,6,37,15,30,30,28,46,31,54,37"/>
+</map>

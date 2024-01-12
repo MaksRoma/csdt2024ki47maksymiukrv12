@@ -1,0 +1,5 @@
+<map id="handleLoss" name="handleLoss">
+<area shape="rect" id="Node000001" title="Handles the loss of a player." alt="" coords="5,5,93,32"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a32afc8bcc4adc7a744a1bd2abd1a8dfa" title="Displays the game board." alt="" coords="141,5,237,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,16,125,16,125,21,93,21"/>
+</map>

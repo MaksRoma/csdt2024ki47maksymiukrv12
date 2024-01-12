@@ -1,0 +1,5 @@
+<map id="upCapture" name="upCapture">
+<area shape="rect" id="Node000001" title="Checks if the capture is going upward (from our view) for a crowned piece." alt="" coords="5,5,86,32"/>
+<area shape="rect" id="Node000002" href="$structsq_1_1_square.html#a7722787ed8b44c2245e511b44ca20615" title="Gets the row number of the square." alt="" coords="134,5,246,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,16,118,16,118,21,86,21"/>
+</map>
