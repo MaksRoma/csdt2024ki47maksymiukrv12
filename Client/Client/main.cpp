@@ -3,6 +3,8 @@
 #include <vector>
 #include <string>
 #include <cstdlib>
+#include <cassert>
+#include <windows.h> // for sleep
 
 
 /**
@@ -428,10 +430,12 @@ namespace constants {
 	 * starting from an even row and moving right.
 	 */
 	extern const int bEvenRightHafJmp = -3;
-	
+
 };
 using namespace constants;
 
+void abcd();
+void Run_All_Tests();
 
 /**
  * @brief Displays the game board.
@@ -476,6 +480,7 @@ bool loadGame(std::vector<Square>* squares, char* turn_, int* selector_);
  * @return True if the string is a valid square, false otherwise.
  */
 bool isSquare(std::string square);
+void isSquare_Test();
 
 /**
  * @brief Reverses the crown status of a given color.
@@ -483,6 +488,7 @@ bool isSquare(std::string square);
  * @return The crowned version of the color ('R' or 'B') if uncrowned, or the uncrowned version ('r' or 'b') if crowned.
  */
 char reverseCrown(char color);
+void reverseCrown_Test();
 
 /**
  * @brief Checks if the current player cannot make any valid moves.
@@ -496,10 +502,11 @@ bool cannotMakeMove();
  * @return True if the movement is possible, false otherwise.
  */
 bool possibleMovement(Square* initSq);
+void possibleMovement_Test();
 
 /**
  * @brief Gets the user's input for the square.
- * 
+ *
  * This function gets the user's input for the square to select.
  * If the input is invalid, the function calls itself recursively.
  * Otherwise, the function returns.
@@ -512,10 +519,11 @@ void getSquare();
  * @return True if the string is a valid square, false otherwise.
  */
 bool goodSquare(std::string sq);
+void goodSquare_Test();
 
 /**
  * @brief Gets the user's input for the target square.
- * 
+ *
  * This function gets the user's input for the target square.
  * If the input is invalid, the function calls itself recursively.
  * Otherwise, the function returns.
@@ -528,30 +536,35 @@ void getTarget();
  * @return True if the string is a valid target square, false otherwise.
  */
 bool goodTarget(std::string sq);
+void goodTarget_Test();
 
 /**
  * @brief Checks if the initial square is one square away from the target square in the forward direction.
  * @return True if the initial square is one square away from the target square in the forward direction, false otherwise.
  */
 bool oneFrSqAway();
+void oneFrSqAway_Test();
 
 /**
  * @brief Checks if the initial square is one square away from the target square in the backward direction.
  * @return True if the initial square is one square away from the target square in the backward direction, false otherwise.
  */
 bool oneBcSqAway();
+void oneBcSqAway_Test();
 
 /**
  * @brief Checks if the initial square is two squares away from the target square in the forward direction.
  * @return True if the initial square is two squares away from the target square in the forward direction, false otherwise.
  */
 bool twoFrSqAway();
+void twoFrSqAway_Test();
 
 /**
  * @brief Checks if the initial square is two squares away from the target square in the backward direction.
  * @return True if the initial square is two squares away from the target square in the backward direction, false otherwise.
  */
 bool twoBcSqAway();
+void twoBcSqAway_Test();
 
 /**
  * @brief Gets the index of the square in the 'squares' vector based on its name.
@@ -559,6 +572,7 @@ bool twoBcSqAway();
  * @return The index of the square in the 'squares' vector.
  */
 int getAddress(std::string sq);
+void getAddress_Test();
 
 /**
  * @brief Gets the letter coordinate of a square.
@@ -566,6 +580,7 @@ int getAddress(std::string sq);
  * @return The letter coordinate of the square.
  */
 char getLetCoordinate(std::string sq1);
+void getLetCoordinate_Test();
 
 /**
  * @brief Gets the name of the square between the initial square and the target square.
@@ -574,6 +589,7 @@ char getLetCoordinate(std::string sq1);
  * @return The name of the square between the initial square and the target square.
  */
 std::string getSqInBetween(Square* initSq, Square* targetSq);
+void getSqInBetween_Test();
 
 /**
  * @brief Gets the direction of capture between the initial square and the target square.
@@ -582,6 +598,7 @@ std::string getSqInBetween(Square* initSq, Square* targetSq);
  * @return The direction of capture ('R' for right, 'L' for left).
  */
 char getCapDirection(std::string* initSq, std::string* targetSq);
+void getCapDirection_Test();
 
 /**
  * @brief Gets the parity (oddness or evenness) of a row.
@@ -589,6 +606,7 @@ char getCapDirection(std::string* initSq, std::string* targetSq);
  * @return The parity of the row ('O' for odd, 'E' for even).
  */
 char getRowParity(char row);
+void getRowParity_Test();
 
 /**
  * @brief Checks if the capture is going upward (from our view) for a crowned piece.
@@ -597,6 +615,7 @@ char getRowParity(char row);
  * @return True if the capture is going upward, false otherwise.
  */
 bool upCapture(Square* initSq, Square* targetSq);
+void upCapture_Test();
 
 /**
  * @brief Checks if the capture is going downward for a crowned piece.
@@ -605,54 +624,63 @@ bool upCapture(Square* initSq, Square* targetSq);
  * @return True if the capture is going downward, false otherwise.
  */
 bool downCapture(Square* initSq, Square* targetSq);
+void downCapture_Test();
 
 /**
  * @brief Checks if the first capture condition for red pieces is met.
  * @return True if the first capture condition is met, false otherwise.
  */
 bool R_Capture1();
+void R_Capture1_Test();
 
 /**
  * @brief Checks if the second capture condition for red pieces is met.
  * @return True if the second capture condition is met, false otherwise.
  */
 bool R_Capture2();
+void R_Capture2_Test();
 
 /**
  * @brief Checks if the third capture condition for red pieces is met.
  * @return True if the third capture condition is met, false otherwise.
  */
 bool R_Capture3();
+void R_Capture3_Test();
 
 /**
  * @brief Checks if the fourth capture condition for red pieces is met.
  * @return True if the fourth capture condition is met, false otherwise.
  */
 bool R_Capture4();
+void R_Capture4_Test();
 
 /**
  * @brief Checks if the first capture condition for black pieces is met.
  * @return True if the first capture condition is met, false otherwise.
  */
 bool B_Capture1();
+void B_Capture1_Test();
 
 /**
  * @brief Checks if the second capture condition for black pieces is met.
  * @return True if the second capture condition is met, false otherwise.
  */
 bool B_Capture2();
+void B_Capture2_Test();
 
 /**
  * @brief Checks if the third capture condition for black pieces is met.
  * @return True if the third capture condition is met, false otherwise.
  */
 bool B_Capture3();
+void B_Capture3_Test();
 
 /**
  * @brief Checks if the fourth capture condition for black pieces is met.
  * @return True if the fourth capture condition is met, false otherwise.
  */
 bool B_Capture4();
+void B_Capture4_Test();
 
 /**
  * @brief Gets the opposite color of a given color.
@@ -660,12 +688,14 @@ bool B_Capture4();
  * @return The opposite color character ('b' or 'r').
  */
 char oppoColor(char color);
+void oppoColor_Test();
 
 /**
  * @brief Checks if a capture is occurring.
  * @return True if a capture is occurring, false otherwise.
  */
 bool isCapture();
+void isCapture_Test();
 
 /**
  * @brief Updates the checkers board after a move.
@@ -677,6 +707,7 @@ void updateBoard();
  * @return True if a promotion is occurring, false otherwise.
  */
 bool isPromotion();
+void isPromotion_Test();
 
 /**
  * @brief Checks if a capture is possible from the initial square.
@@ -684,6 +715,7 @@ bool isPromotion();
  * @return True if a capture is possible, false otherwise.
  */
 bool possibleCapture(Square* initSq);
+void possibleCapture_Test();
 
 /**
  * @brief Gets the user's input for the target square in consecutive captures.
@@ -696,6 +728,7 @@ void getConsecutiveJmpTarget();
  * @return True if the string is a valid target square, false otherwise.
  */
 bool goodConsecutiveJmpTarget(std::string sq);
+void goodConsecutiveJmpTarget_Test();
 
 /**
  * @brief Displays the help information.
@@ -727,11 +760,12 @@ void AI_Turn();
  * @return True if the game is over, false otherwise.
  */
 bool gameOver();
+void gameOver_Test();
 
 /**
  * @brief Handles the end of the game.
- * 
- * 
+ *
+ *
  */
 void checkersGame(int selector_);
 
@@ -757,6 +791,7 @@ void exit();
  * @param size: The size of the array.
  */
 void shuffleArray(int* array, int size);
+void shuffleArray_Test();
 
 /**
  * @brief Displays an error message.
@@ -785,6 +820,13 @@ int checkers::inBetween = 0; //holds vector address of square in between the
 
 int main()
 try {
+	static bool test_run = false;
+	if (!test_run)
+	{
+		Run_All_Tests();
+		test_run = true;
+		system("cls");
+	}
 	displayMenu();
 	std::cout << ">> ";
 	std::cin >> selection;
@@ -841,6 +883,48 @@ catch (...) {
 	return 2;
 }
 
+void abcd()
+{
+	std::cout << "abcd";
+}
+
+void Run_All_Tests()
+{
+	isSquare_Test();
+	reverseCrown_Test();
+	possibleMovement_Test();
+	goodSquare_Test();
+	goodTarget_Test();
+	oneFrSqAway_Test();
+	oneBcSqAway_Test();
+	twoFrSqAway_Test();
+	twoBcSqAway_Test();
+	getAddress_Test();
+	getLetCoordinate_Test();
+	getSqInBetween_Test();
+	getCapDirection_Test();
+	getRowParity_Test();
+	upCapture_Test();
+	downCapture_Test();
+	R_Capture1_Test();
+	R_Capture2_Test();
+	R_Capture3_Test();
+	R_Capture4_Test();
+	B_Capture1_Test();
+	B_Capture2_Test();
+	B_Capture3_Test();
+	B_Capture4_Test();
+	oppoColor_Test();
+	isCapture_Test();
+	isPromotion_Test();
+	possibleCapture_Test();
+	goodConsecutiveJmpTarget_Test();
+	gameOver_Test();
+	shuffleArray_Test();
+
+	std::cout << "All tests passed!\n";
+	Sleep(1500);
+}
 
 void Square::changeColor(char newColor) {
 	if (c != newColor) c = newColor;
@@ -1243,6 +1327,52 @@ bool isSquare(std::string sq) {
 	return false;
 }
 
+void isSquare_Test()
+{
+	std::string test_square = "a1";
+	// Test case 1: Square is valid
+	assert(isSquare(test_square));
+
+	// Test case 2: Square is invalid
+	test_square = "z9";
+	assert(!isSquare(test_square));
+
+	// Test case 3: Square is valid
+	test_square = "h8";
+	assert(isSquare(test_square));
+
+	// Test case 4: Square is invalid
+	test_square = "e9";
+	assert(!isSquare(test_square));
+
+	// Test case 5: Square is valid
+	test_square = "c3";
+	assert(isSquare(test_square));
+
+	// Test case 6: Square is invalid
+	test_square = "d0";
+	assert(!isSquare(test_square));
+
+	// Test case 7: Square is valid
+	test_square = "g7";
+	assert(isSquare(test_square));
+
+	// Test case 8: Square is invalid
+	test_square = "i7";
+	assert(!isSquare(test_square));
+
+	// Test case 9: Square is valid
+	test_square = "f4";
+	assert(isSquare(test_square));
+
+	// Test case 10: Square is invalid
+	test_square = "j2";
+	assert(!isSquare(test_square));
+
+	std::cout << "isSquare(): All test cases passed!\n";
+	Sleep(25);
+}
+
 char reverseCrown(char color) {
 	//returns either the crowned version of a color ('R' or 'B')
 	//or uncrowned version ('r' or 'b')
@@ -1253,6 +1383,35 @@ char reverseCrown(char color) {
 	error("Exception: reverseCrown() used on a char that is not 'r', 'b', 'R', or 'B'\n");
 }
 
+void reverseCrown_Test()
+{
+	// Test case 1: Color is Red
+	assert(reverseCrown(Red) == cRed);
+
+	// Test case 2: Color is Black
+	assert(reverseCrown(Black) == cBlack);
+
+	// Test case 3: Color is cRed
+	assert(reverseCrown(cRed) == Red);
+
+	// Test case 4: Color is cBlack
+	assert(reverseCrown(cBlack) == Black);
+
+	// Test case 5: Color is Red, cBlack is expected to error
+	assert(!(reverseCrown(Red) == cBlack));
+
+	// Test case 6: Color is Black, cRed is expected to error
+	assert(!(reverseCrown(Black) == cRed));
+
+	// Test case 7: Color is cRed, Black is expected to error
+	assert(!(reverseCrown(cRed) == Black));
+
+	// Test case 8: Color is cBlack, Red is expected to error
+	assert(!(reverseCrown(cBlack) == Red));
+
+	std::cout << "reverseCrown(): All test cases passed!\n";
+	Sleep(25);
+}
 
 bool cannotMakeMove() {
 	for (size_t i = 0; i < squares.size(); ++i)
@@ -1331,6 +1490,25 @@ bool possibleMovement(Square* initSq) {
 	return false;
 }
 
+void possibleMovement_Test()
+{
+	prepareGame();
+	// Test case 1: Square is Red, movement is possible
+	assert(possibleMovement(&squares[9]));
+
+	// Test case 2: Square is Black, movement is impossible
+	assert(!possibleMovement(&squares[20]));
+
+	// Test case 4: Square is Black, movement is impossible
+	assert(!possibleMovement(&squares[31]));
+
+	// Test case 3: Square is Red, movement is possible
+	assert(possibleMovement(&squares[11]));
+
+	std::cout << "possibleMovement(): All test cases passed!\n";
+	Sleep(25);
+}
+
 void getSquare() {
 	std::cout << "Current turn: " << turn << "\n";
 	std::cout << "Enter coordinate of piece you want to move (ex. a1, f8):\n";
@@ -1379,6 +1557,29 @@ bool goodSquare(std::string sq) {
 	}
 
 	return true; //Success!
+}
+
+void goodSquare_Test()
+{
+	prepareGame();
+	// Test case 1: Square is Red, color is correct
+	selection = "c3";
+	assert(goodSquare(selection));
+
+	// Test case 2: Square is Black, color is incorrect
+	selection = "b6";
+	assert(!goodSquare(selection));
+
+	// Test case 3: Square is Red
+	selection = "a1";
+	assert(goodSquare(selection));
+
+	// Test case 4: Square is Black, color is incorrect
+	selection = "c7";
+	assert(!goodSquare("c7"));
+
+	std::cout << "goodSquare(): All test cases passed!\n";
+	Sleep(25);
 }
 
 void getTarget() {
@@ -1495,6 +1696,42 @@ bool goodTarget(std::string sq) {
 	return true; //Success!
 }
 
+void goodTarget_Test()
+{
+	prepareGame();
+
+	// Test case 1: Square is Red, target is one square away
+	turn = Red;
+	selection = "c3";
+	assert(goodSquare(selection));
+	selection = "d4";
+	assert(goodTarget(selection));
+
+	// Test case 2: Square is Black, target is one square away
+	turn = Black;
+	selection = "b6";
+	assert(goodSquare(selection));
+	selection = "a5";
+	assert(goodTarget(selection));
+
+	// Test case 3: Square is Red, target will be two squares away, but there is no capture
+	turn = Red;
+	selection = "c3";
+	assert(goodSquare(selection));
+	selection = "e5";
+	assert(!goodTarget(selection));
+
+	// Test case 4: Square is Black, target will be two squares away, but there is no capture
+	turn = Black;
+	selection = "b6";
+	assert(goodSquare(selection));
+	selection = "d4";
+	assert(!goodTarget(selection));
+
+	std::cout << "goodTarget(): All test cases passed!\n";
+	Sleep(25);
+}
+
 int getAddress(std::string sq)
 {
 	for (int i = 0; i < squares.size(); ++i)
@@ -1505,6 +1742,29 @@ int getAddress(std::string sq)
 		}
 	}
 	error("Exception: used getAddress on non-square\n");
+}
+
+void getAddress_Test()
+{
+	prepareGame();
+	// Test case 1: Square is Red
+	selection = "c3";
+	assert(getAddress(selection) == 9);
+
+	// Test case 2: Square is Black
+	selection = "b6";
+	assert(getAddress(selection) == 20);
+
+	// Test case 3: Square is Red
+	selection = "a1";
+	assert(getAddress(selection) == 0);
+
+	// Test case 4: Square is Black
+	selection = "c7";
+	assert(getAddress(selection) == 25);
+
+	std::cout << "getAddress(): All test cases passed!\n";
+	Sleep(25);
 }
 
 bool oneFrSqAway()
@@ -1518,6 +1778,27 @@ bool oneFrSqAway()
 	return false;
 }
 
+void oneFrSqAway_Test()
+{
+	prepareGame();
+	// Test case 1: Square is Red, target is one square away
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	assert(oneFrSqAway());
+
+	// Test case 2: Square is Black, target is one square away (but since it is front for red, it is back for black)
+	selection = "b6";
+	selected = getAddress(selection);
+	selection = "a5";
+	targeted = getAddress(selection);
+	assert(!oneFrSqAway());
+
+	std::cout << "oneFrSqAway(): All test cases passed!\n";
+	Sleep(25);
+}
+
 bool oneBcSqAway()
 {
 	//is the target one square away in back?
@@ -1527,6 +1808,27 @@ bool oneBcSqAway()
 	}
 
 	return false;
+}
+
+void oneBcSqAway_Test()
+{
+	prepareGame();
+	// Test case 1: Square is Red, target is one square away (but since it is back for black, it is front for red)
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	assert(!oneBcSqAway());
+
+	// Test case 2: Square is Black, target is one square away
+	selection = "b6";
+	selected = getAddress(selection);
+	selection = "a5";
+	targeted = getAddress(selection);
+	assert(oneBcSqAway());
+
+	std::cout << "oneBcSqAway(): All test cases passed!\n";
+	Sleep(25);
 }
 
 bool twoFrSqAway()
@@ -1540,6 +1842,27 @@ bool twoFrSqAway()
 	return false;
 }
 
+void twoFrSqAway_Test()
+{
+	prepareGame();
+	// Test case 1: Square is Red, target is two squares away
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	assert(twoFrSqAway());
+
+	// Test case 2: Square is Black, target is two squares away (but since it is front for red, it is back for black)
+	selection = "b6";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	assert(!twoFrSqAway());
+
+	std::cout << "twoFrSqAway(): All test cases passed!\n";
+	Sleep(25);
+}
+
 bool twoBcSqAway()
 {
 	//is the target two squares away and behind? (for crowned pieces)
@@ -1549,6 +1872,27 @@ bool twoBcSqAway()
 	}
 
 	return false;
+}
+
+void twoBcSqAway_Test()
+{
+	prepareGame();
+	// Test case 1: Square is Red, target is two squares away (but since it is back for black, it is front for red)
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	assert(!twoBcSqAway());
+
+	// Test case 2: Square is Black, target is two squares away
+	selection = "b6";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	assert(twoBcSqAway());
+
+	std::cout << "twoBcSqAway(): All test cases passed!\n";
+	Sleep(25);
 }
 
 char getLetCoordinate(std::string sq)
@@ -1563,6 +1907,28 @@ char getLetCoordinate(std::string sq)
 	if (sq == "g1" || sq == "g3" || sq == "g5" || sq == "g7") return 'g';
 	if (sq == "h2" || sq == "h4" || sq == "h6" || sq == "h8") return 'h';
 	error("Exception: The argument of getLetCoordinate is not a square\n");
+}
+
+void getLetCoordinate_Test()
+{
+	// Test case 1: Square is Red
+	selection = "c3";
+	assert(getLetCoordinate(selection) == 'c');
+
+	// Test case 2: Square is Black
+	selection = "b6";
+	assert(getLetCoordinate(selection) == 'b');
+
+	// Test case 3: Square is Red
+	selection = "a1";
+	assert(getLetCoordinate(selection) == 'a');
+
+	// Test case 4: Square is Black
+	selection = "c7";
+	assert(getLetCoordinate(selection) == 'c');
+
+	std::cout << "getLetCoordinate(): All test cases passed!\n";
+	Sleep(25);
 }
 
 std::string getSqInBetween(Square* initSq, Square* targetSq)
@@ -1630,6 +1996,46 @@ std::string getSqInBetween(Square* initSq, Square* targetSq)
 	return newSquare;
 }
 
+void getSqInBetween_Test()
+{
+	prepareGame();
+	// Test case 1: Square is Red
+	turn = Red;
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	assert(getSqInBetween(&squares[selected], &squares[targeted]) == "d4");
+
+	// Test case 2: Square is Black
+	turn = Black;
+	selection = "b6";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	assert(getSqInBetween(&squares[selected], &squares[targeted]) == "c5");
+
+	// Test case 3: Square is Red
+	turn = Red;
+	selection = "a1";
+	selected = getAddress(selection);
+	selection = "c3";
+	targeted = getAddress(selection);
+	assert(getSqInBetween(&squares[selected], &squares[targeted]) == "b2");
+
+	// Test case 4: Square is Black
+	turn = Black;
+	selection = "c7";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	assert(getSqInBetween(&squares[selected], &squares[targeted]) == "d6");
+
+	std::cout << "getSqInBetween(): All test cases passed!\n";
+	Sleep(25);
+
+}
+
 char getCapDirection(std::string* initSq, std::string* targetSq)
 {
 	//these two if-statements work for both red and black
@@ -1640,6 +2046,54 @@ char getCapDirection(std::string* initSq, std::string* targetSq)
 	if (getLetCoordinate(*initSq) > getLetCoordinate(*targetSq))
 		return Left;
 	error("Exception: The selected and targeted squares are on the same row\n");
+}
+
+void getCapDirection_Test()
+{
+	prepareGame();
+	// Test case 1: Square is Red
+	turn = Red;
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	std::string test_squares_selected = squares[selected].square();
+	std::string test_squares_targeted = squares[targeted].square();
+	assert(getCapDirection(&test_squares_selected, &test_squares_targeted) == Right);
+
+	// Test case 2: Square is Black
+	turn = Black;
+	selection = "b6";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	test_squares_selected = squares[selected].square();
+	test_squares_targeted = squares[targeted].square();
+	assert(getCapDirection(&test_squares_selected, &test_squares_targeted) == Right);
+
+	// Test case 3: Square is Red
+	turn = Red;
+	selection = "a1";
+	selected = getAddress(selection);
+	selection = "c3";
+	targeted = getAddress(selection);
+	test_squares_selected = squares[selected].square();
+	test_squares_targeted = squares[targeted].square();
+	assert(getCapDirection(&test_squares_selected, &test_squares_targeted) == Right);
+
+	// Test case 4: Square is Black
+	turn = Black;
+	selection = "c7";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	test_squares_selected = squares[selected].square();
+	test_squares_targeted = squares[targeted].square();
+	assert(getCapDirection(&test_squares_selected, &test_squares_targeted) == Right);
+
+	std::cout << "getCapDirection(): All test cases passed!\n";
+	Sleep(25);
+
 }
 
 char getRowParity(char row)
@@ -1657,14 +2111,123 @@ char getRowParity(char row)
 	error("Exception: The row argument used in getRowParity is not from 1-8\n");
 }
 
+void getRowParity_Test()
+{
+	// Test case 1: Row is 1
+	assert(getRowParity('1') == Odd);
+
+	// Test case 2: Row is 2
+	assert(getRowParity('2') == Even);
+
+	// Test case 3: Row is 3
+	assert(getRowParity('3') == Odd);
+
+	// Test case 4: Row is 4
+	assert(getRowParity('4') == Even);
+
+	// Test case 5: Row is 5
+	assert(getRowParity('5') == Odd);
+
+	// Test case 6: Row is 6
+	assert(getRowParity('6') == Even);
+
+	// Test case 7: Row is 7
+	assert(getRowParity('7') == Odd);
+
+	// Test case 8: Row is 8
+	assert(getRowParity('8') == Even);
+
+	std::cout << "getRowParity(): All test cases passed!\n";
+	Sleep(25);
+}
+
 bool upCapture(Square* initSq, Square* targetSq) {
 	if (initSq->row() < targetSq->row()) return true;
 	return false;
 }
 
+void upCapture_Test()
+{
+	prepareGame();
+	// Test case 1: Square is Red
+	turn = Red;
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	assert(upCapture(&squares[selected], &squares[targeted]));
+
+	// Test case 2: Square is Black
+	turn = Black;
+	selection = "b6";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	assert(!upCapture(&squares[selected], &squares[targeted]));
+
+	// Test case 3: Square is Red
+	turn = Red;
+	selection = "a1";
+	selected = getAddress(selection);
+	selection = "c3";
+	targeted = getAddress(selection);
+	assert(upCapture(&squares[selected], &squares[targeted]));
+
+	// Test case 4: Square is Black
+	turn = Black;
+	selection = "c7";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	assert(!upCapture(&squares[selected], &squares[targeted]));
+
+	std::cout << "upCapture(): All test cases passed!\n";
+	Sleep(25);
+}
+
 bool downCapture(Square* initSq, Square* targetSq) {
 	if (initSq->row() > targetSq->row()) return true;
 	return false;
+}
+
+void downCapture_Test()
+{
+	prepareGame();
+	// Test case 1: Square is Red
+	turn = Red;
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	assert(!downCapture(&squares[selected], &squares[targeted]));
+
+	// Test case 2: Square is Black
+	turn = Black;
+	selection = "b6";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	assert(downCapture(&squares[selected], &squares[targeted]));
+
+	// Test case 3: Square is Red
+	turn = Red;
+	selection = "a1";
+	selected = getAddress(selection);
+	selection = "c3";
+	targeted = getAddress(selection);
+	assert(!downCapture(&squares[selected], &squares[targeted]));
+
+	// Test case 4: Square is Black
+	turn = Black;
+	selection = "c7";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	assert(downCapture(&squares[selected], &squares[targeted]));
+
+	std::cout << "downCapture(): All test cases passed!\n";
+	Sleep(25);
+
 }
 
 bool R_Capture1()
@@ -1676,6 +2239,38 @@ bool R_Capture1()
 	return false;
 }
 
+void R_Capture1_Test()
+{
+	prepareGame();
+
+	// Test case 1: Square is Red, initial row is odd, capture direction is right
+	turn = Red;
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	std::string squares_selected = squares[selected].square();
+	std::string squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(R_Capture1());
+
+	// Test case 2: Square is Red, initial row is even, capture direction is right
+	turn = Red;
+	selection = "f2";
+	selected = getAddress(selection);
+	selection = "h4";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	squares_selected = squares[selected].square();
+	squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(!R_Capture1());
+
+	std::cout << "R_Capture1(): All test cases passed!\n";
+	Sleep(25);
+}
+
 bool R_Capture2()
 {
 	//is red's second capture condition satisfied?
@@ -1683,6 +2278,38 @@ bool R_Capture2()
 		// 2) start even-numbered row, going right
 	if (initialRowParity == Even && captureDirection == Right) return true;
 	return false;
+}
+
+void R_Capture2_Test()
+{
+	prepareGame();
+
+	// Test case 1: Square is Red, initial row is odd, capture direction is right
+	turn = Red;
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	std::string squares_selected = squares[selected].square();
+	std::string squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(!R_Capture2());
+
+	// Test case 2: Square is Red, initial row is even, capture direction is right
+	turn = Red;
+	selection = "f2";
+	selected = getAddress(selection);
+	selection = "h4";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	squares_selected = squares[selected].square();
+	squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(R_Capture2());
+
+	std::cout << "R_Capture2(): All test cases passed!\n";
+	Sleep(25);
 }
 
 bool R_Capture3()
@@ -1694,6 +2321,38 @@ bool R_Capture3()
 	return false;
 }
 
+void R_Capture3_Test()
+{
+	prepareGame();
+
+	// Test case 1: Square is Red, initial row is odd, capture direction is left
+	turn = Red;
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "a5";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	std::string squares_selected = squares[selected].square();
+	std::string squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(R_Capture3());
+
+	// Test case 2: Square is Red, initial row is even, capture direction is left
+	turn = Red;
+	selection = "f2";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	squares_selected = squares[selected].square();
+	squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(!R_Capture3());
+
+	std::cout << "R_Capture3(): All test cases passed!\n";
+	Sleep(25);
+}
+
 bool R_Capture4()
 {
 	//is red's fourth capture condition satisfied?
@@ -1701,6 +2360,38 @@ bool R_Capture4()
 		// 4) start even-numbered row, going left
 	if (initialRowParity == Even && captureDirection == Left) return true;
 	return false;
+}
+
+void R_Capture4_Test()
+{
+	prepareGame();
+
+	// Test case 1: Square is Red, initial row is odd, capture direction is left
+	turn = Red;
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "a5";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	std::string squares_selected = squares[selected].square();
+	std::string squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(!R_Capture4());
+
+	// Test case 2: Square is Red, initial row is even, capture direction is left
+	turn = Red;
+	selection = "f2";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	squares_selected = squares[selected].square();
+	squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(R_Capture4());
+
+	std::cout << "R_Capture4(): All test cases passed!\n";
+	Sleep(25);
 }
 
 bool B_Capture1()
@@ -1712,6 +2403,38 @@ bool B_Capture1()
 	return false;
 }
 
+void B_Capture1_Test()
+{
+	prepareGame();
+
+	// Test case 1: Square is Black, initial row is odd, capture direction is left
+	turn = Black;
+	selection = "e7";
+	selected = getAddress(selection);
+	selection = "c5";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	std::string squares_selected = squares[selected].square();
+	std::string squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(B_Capture1());
+
+	// Test case 2: Square is Black, initial row is even, capture direction is left
+	turn = Black;
+	selection = "h6";
+	selected = getAddress(selection);
+	selection = "f4";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	squares_selected = squares[selected].square();
+	squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(!B_Capture1());
+
+	std::cout << "B_Capture1(): All test cases passed!\n";
+	Sleep(25);
+}
+
 bool B_Capture2()
 {
 	//is black's second capture condition satisfied?
@@ -1719,6 +2442,38 @@ bool B_Capture2()
 		// 2) start even-numbered row, going left
 	if (initialRowParity == Even && captureDirection == Left) return true;
 	return false;
+}
+
+void B_Capture2_Test()
+{
+	prepareGame();
+
+	// Test case 1: Square is Black, initial row is odd, capture direction is left
+	turn = Black;
+	selection = "e7";
+	selected = getAddress(selection);
+	selection = "c5";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	std::string squares_selected = squares[selected].square();
+	std::string squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(!B_Capture2());
+
+	// Test case 2: Square is Black, initial row is even, capture direction is left
+	turn = Black;
+	selection = "h6";
+	selected = getAddress(selection);
+	selection = "f4";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	squares_selected = squares[selected].square();
+	squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(B_Capture2());
+
+	std::cout << "B_Capture2(): All test cases passed!\n";
+	Sleep(25);
 }
 
 bool B_Capture3()
@@ -1730,6 +2485,38 @@ bool B_Capture3()
 	return false;
 }
 
+void B_Capture3_Test()
+{
+	prepareGame();
+
+	// Test case 1: Square is Red, initial row is odd, capture direction is right
+	turn = Red;
+	selection = "a7";
+	selected = getAddress(selection);
+	selection = "c5";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	std::string squares_selected = squares[selected].square();
+	std::string squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(B_Capture3());
+
+	// Test case 2: Square is Red, initial row is even, capture direction is right
+	turn = Red;
+	selection = "d8";
+	selected = getAddress(selection);
+	selection = "h6";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	squares_selected = squares[selected].square();
+	squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(!B_Capture3());
+
+	std::cout << "B_Capture3(): All test cases passed!\n";
+	Sleep(25);
+}
+
 bool B_Capture4()
 {
 	//is black's fourth capture condition satisfied?
@@ -1737,6 +2524,38 @@ bool B_Capture4()
 		// 4) start even-numbered row, going right
 	if (initialRowParity == Even && captureDirection == Right) return true;
 	return false;
+}
+
+void B_Capture4_Test()
+{
+	prepareGame();
+
+	// Test case 1: Square is Red, initial row is odd, capture direction is right
+	turn = Red;
+	selection = "a7";
+	selected = getAddress(selection);
+	selection = "c5";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	std::string squares_selected = squares[selected].square();
+	std::string squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(!B_Capture4());
+
+	// Test case 2: Square is Red, initial row is even, capture direction is right
+	turn = Red;
+	selection = "d8";
+	selected = getAddress(selection);
+	selection = "h6";
+	targeted = getAddress(selection);
+	initialRowParity = getRowParity(squares[selected].row());
+	squares_selected = squares[selected].square();
+	squares_targeted = squares[targeted].square();
+	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
+	assert(B_Capture4());
+
+	std::cout << "B_Capture4(): All test cases passed!\n";
+	Sleep(25);
 }
 
 char oppoColor(char color) {
@@ -1750,6 +2569,24 @@ char oppoColor(char color) {
 	}
 }
 
+void oppoColor_Test()
+{
+	// Test case 1: Color is Red
+	assert(oppoColor(Red) == Black);
+
+	// Test case 2: Color is Black
+	assert(oppoColor(Black) == Red);
+
+	// Test case 3: Color is cRed
+	assert(oppoColor(cRed) == cBlack);
+
+	// Test case 4: Color is cBlack
+	assert(oppoColor(cBlack) == cRed);
+
+	std::cout << "oppoColor(): All test cases passed!\n";
+	Sleep(25);
+}
+
 bool isCapture() {
 	//is a capture occuring?
 
@@ -1760,9 +2597,8 @@ bool isCapture() {
 	initialRowParity = getRowParity(squares[selected].row());
 
 	// 3) determine capture direction
-	//captureDirection = getCapDirection(&squares[selected].square(), &squares[targeted].square());
-	auto squares_selected = squares[selected].square();
-	auto squares_targeted = squares[targeted].square();
+	std::string squares_selected = squares[selected].square();
+	std::string squares_targeted = squares[targeted].square();
 	captureDirection = getCapDirection(&squares_selected, &squares_targeted);
 
 	//check if any capture condition is true
@@ -1811,6 +2647,67 @@ bool isCapture() {
 	//mark the in-between square as captured
 	squares[inBetween].switchCap(true);  //this square is now captured
 	return true;
+}
+
+void isCapture_Test()
+{
+	/*
+		  | b |   | b |   | b |   | b
+	8 ___|___|___|___|___|___|___|___
+		b |   | b |   | b |   | b |
+	7 ___|___|___|___|___|___|___|___
+		  | b |   | b |   | b |   | b
+	6 ___|___|___|___|___|___|___|___
+		  |   |   |   |   |   |   |
+	5 ___|___|___|___|___|___|___|___
+		  |   |   |   |   |   |   |
+	4 ___|___|___|___|___|___|___|___
+		r |   | r |   | r |   | r |
+	3 ___|___|___|___|___|___|___|___
+		  | r |   | r |   | r |   | r
+	2 ___|___|___|___|___|___|___|___
+		r |   | r |   | r |   | r |
+	1 ___|___|___|___|___|___|___|___
+		a   b   c   d   e   f   g   h
+	*/
+	prepareGame();
+
+	// Test case 1: Square is Red
+	turn = Red;
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	squares[13] = Square(Black, "d4", '4');
+	assert(isCapture());
+
+	// Test case 2: Square is Black
+	turn = Black;
+	selection = "b6";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	squares[17] = Square(Red, "c5", '5');
+	assert(isCapture());
+
+	// Test case 3: Square is Red
+	turn = Red;
+	selection = "a1";
+	selected = getAddress(selection);
+	selection = "c3";
+	targeted = getAddress(selection);
+	assert(!isCapture());
+
+	// Test case 4: Square is Black
+	turn = Black;
+	selection = "c7";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	assert(!isCapture());
+
+	std::cout << "isCapture(): All test cases passed!\n";
+	Sleep(25);
 }
 
 void updateBoard() {
@@ -1863,6 +2760,39 @@ bool isPromotion() {
 		default: return false;
 		}
 	}
+}
+
+void isPromotion_Test()
+{
+	prepareGame();
+
+	// Test case 1: Square is Red
+	turn = Red;
+	selection = "e5";
+	targeted = getAddress(selection);
+	assert(!isPromotion());
+
+	// Test case 2: Square is Black
+	turn = Black;
+	selection = "d4";
+	targeted = getAddress(selection);
+	assert(!isPromotion());
+
+	// Test case 3: Square is Red
+	turn = Red;
+	selection = "f8";
+	targeted = getAddress(selection);
+	assert(isPromotion());
+
+	// Test case 4: Square is Black
+	turn = Black;
+	selection = "a1";
+	targeted = getAddress(selection);
+	assert(isPromotion());
+
+	std::cout << "isPromotion(): All test cases passed!\n";
+	Sleep(25);
+
 }
 
 bool possibleCapture(Square* initSq) {
@@ -1963,6 +2893,30 @@ bool possibleCapture(Square* initSq) {
 		}
 	}
 	return false;
+}
+
+void possibleCapture_Test()
+{
+	prepareGame();
+
+	// Test case 1: Square is Red
+	turn = Red;
+	squares[13] = Square(Black, "d4", '4');
+	assert(possibleCapture(&squares[9]));
+
+	// Test case 1: Square is Black
+	turn = Black;
+	squares[17] = Square(Red, "c5", '5');
+	assert(possibleCapture(&squares[21]));
+
+	// Test case 1: Square is Red
+	assert(!possibleCapture(&squares[1]));
+
+	// Test case 1: Square is Black
+	assert(!possibleCapture(&squares[30]));
+
+	std::cout << "possibleCapture(): All test cases passed!\n";
+	Sleep(25);
 }
 
 void getConsecutiveJmpTarget() {
@@ -2084,6 +3038,48 @@ bool goodConsecutiveJmpTarget(std::string sq) {
 	}
 
 	return true; //Success!
+}
+
+void goodConsecutiveJmpTarget_Test()
+{
+	prepareGame();
+
+	// Test case 1: Square is Red
+	turn = Red;
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	assert(!goodConsecutiveJmpTarget(selection));
+
+	// Test case 2: Square is Black
+	turn = Black;
+	selection = "b6";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	assert(!goodConsecutiveJmpTarget(selection));
+
+	// Test case 3: Square is Red
+	turn = Red;
+	selection = "c3";
+	selected = getAddress(selection);
+	selection = "e5";
+	targeted = getAddress(selection);
+	squares[13] = Square(Black, "d4", '4');
+	assert(goodConsecutiveJmpTarget(selection));
+
+	// Test case 4: Square is Black
+	turn = Black;
+	selection = "b6";
+	selected = getAddress(selection);
+	selection = "d4";
+	targeted = getAddress(selection);
+	squares[17] = Square(Red, "c5", '5');
+	assert(goodConsecutiveJmpTarget(selection));
+
+	std::cout << "goodConsecutiveJmpTarget(): All test cases passed!\n";
+	Sleep(25);
 }
 
 void displayHelp() {
@@ -2235,6 +3231,34 @@ bool gameOver() {
 	return false;
 }
 
+void gameOver_Test()
+{
+	prepareGame();
+
+	// Test case 1: there are still pieces on the board
+	assert(!gameOver());
+
+	// Test case 2: 0 black pieces on the board, 1 red piece on the board
+	for (size_t i = 0; i < squares.size(); ++i)
+	{
+		if (squares[i].color() == Black || squares[i].color() == cBlack)
+			squares[i].changeColor(' ');
+	}
+	assert(gameOver());
+
+	// Test case 3: 1 black piece on the board, 0 red pieces on the board
+	for (size_t i = 0; i < squares.size(); ++i)
+	{
+		if (squares[i].color() == Red || squares[i].color() == cRed)
+			squares[i].changeColor(' ');
+	}
+	squares[0].changeColor(Black);
+	assert(gameOver());
+
+	std::cout << "gameOver(): All test cases passed!\n";
+	Sleep(25);
+}
+
 void checkersGame(int selector_) {
 	bool quit = false;
 	bool AI_vs_AI = false;
@@ -2342,6 +3366,38 @@ void shuffleArray(int* array, int size) {
 		array[i] = array[j];
 		array[j] = temp;
 	}
+}
+
+void shuffleArray_Test()
+{
+	srand(time(NULL)); // Seed for randomness
+
+	const int size = 5;
+	int original[size] = { 1, 2, 3, 4, 5 };
+	int testArray[size];
+
+	std::copy(original, original + size, testArray);
+	shuffleArray(testArray, size);
+
+	// Test 1: Array size should remain the same
+	assert(sizeof(testArray) == sizeof(original));
+
+	// Test 2: Test for randomness (not perfect, but a basic check)
+	int anotherTestArray[size];
+	std::copy(original, original + size, anotherTestArray);
+	shuffleArray(anotherTestArray, size);
+
+	bool arraysDiffer = false;
+	for (int i = 0; i < size; ++i) {
+		if (testArray[i] != anotherTestArray[i]) {
+			arraysDiffer = true;
+			break;
+		}
+	}
+	assert(arraysDiffer);
+
+	std::cout << "shuffleArray(): All test cases passed!\n";
+	Sleep(25);
 }
 
 void error(std::string message)
